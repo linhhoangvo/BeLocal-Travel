@@ -3,9 +3,9 @@ const tours = {
   cocktails: {
     title: "Secret Cocktail Bars & Local Food",
     category: "FOOD & DRINK",
-    intro: "Hidden bars, Hoi An flavours, and the stories between them.",
-    description: "The old town changes after dark. Follow a local guide through its lanes and into places you might walk straight past, tasting cocktails and Hoi An food as you go.",
-    highlights: ["A small group of no more than 8 guests", "Cocktails, local food, and dessert along the way", "Non-alcoholic drinks and vegetarian food are available"],
+    intro: "An evening walk through Hoi An Old Town with cocktails, local food and a guide.",
+    description: "Meet your local guide in the Old Town and walk between hidden bars and food stops. Along the way, hear about Hoi An's streets and the people behind its food and drinks.",
+    highlights: [],
     image: "IMG_0253%20(3).jpg",
     alt: "Local dishes served during a Hoi An food experience",
     bookingUrl: "https://www.getyourguide.com/hoi-an-l831/hoi-an-secret-cocktail-bars-local-food-experience-t1412677/",
@@ -63,9 +63,10 @@ if (!tour) {
     document.body.classList.add("cocktails-page");
     document.getElementById("cocktail-facts").hidden = false;
     document.getElementById("cocktail-extra").hidden = false;
-    document.getElementById("cocktail-scene").hidden = false;
-    document.querySelector(".detail-copy h2").innerHTML = "A night through <em>Hoi An.</em>";
-    document.getElementById("booking-description").textContent = "Choose a date and the number of guests to see the live price and available start times.";
+    document.querySelector(".detail-copy h2").textContent = "About this tour";
+    document.querySelector(".booking-overline").textContent = "BOOK THIS TOUR";
+    document.getElementById("booking-title").textContent = "Check availability";
+    document.getElementById("booking-description").textContent = "Select your date and guests to see current times and prices.";
   }
   document.title = tour.title + " — Be Local Travel";
   document.querySelector('meta[name="description"]').content = tour.intro;
@@ -88,7 +89,7 @@ if (!tour) {
     document.getElementById("booking-description").textContent = "This experience does not yet have its own public checkout page.";
     document.getElementById("booking-note").textContent = "The button opens our tour collection. Dates and availability for this experience are not yet shown here.";
   } else {
-    document.getElementById("booking-note").textContent = "Checkout opens on GetYourGuide in a new tab.";
+    document.getElementById("booking-note").textContent = key === "cocktails" ? "Booking and payment are handled by GetYourGuide." : "Checkout opens on GetYourGuide in a new tab.";
   }
   for (const [id, other] of Object.entries(tours)) {
     if (id === key) continue;

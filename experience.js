@@ -6,8 +6,8 @@ const tours = {
     intro: "An evening walk through Hoi An Old Town with cocktails, local food and a guide.",
     description: "Meet your local guide in the Old Town and walk between hidden bars and food stops. Along the way, hear about Hoi An's streets and the people behind its food and drinks.",
     highlights: [],
-    image: "IMG_0253%20(3).jpg",
-    alt: "Local dishes served during a Hoi An food experience",
+    image: "cocktail.jpg",
+    alt: "Cocktails served in Hoi An",
     bookingUrl: "https://www.getyourguide.com/hoi-an-l831/hoi-an-secret-cocktail-bars-local-food-experience-t1412677/",
     direct: true
   },
@@ -63,10 +63,20 @@ if (!tour) {
     document.body.classList.add("cocktails-page");
     document.getElementById("cocktail-facts").hidden = false;
     document.getElementById("cocktail-extra").hidden = false;
+    const gallery = document.getElementById("cocktail-gallery");
+    gallery.innerHTML = '<img src="cocktail%204.jpg" alt="Guests enjoying drinks in Hoi An" loading="lazy"><img src="cocktail%2015.jpg" alt="Bartender preparing a cocktail" loading="lazy"><img src="cocktail%208.jpg" alt="Cocktails at a Hoi An bar" loading="lazy"><img src="cocktail%2022.jpeg" alt="Cocktails served at an evening bar" loading="lazy">';
+    gallery.hidden = false;
+    document.getElementById("gallery-caption").hidden = true;
     document.querySelector(".detail-copy h2").textContent = "About this tour";
     document.querySelector(".booking-overline").textContent = "BOOK THIS TOUR";
     document.getElementById("booking-title").textContent = "Check availability";
     document.getElementById("booking-description").textContent = "Select your date and guests to see current times and prices.";
+  }
+  if (key === "calligraphy") {
+    document.body.classList.add("calligraphy-page");
+    const gallery = document.getElementById("cocktail-gallery");
+    gallery.innerHTML = '<img src="743811501_18001909043957289_4521587935079853568_n.jpg" alt="Tea being poured into cups" loading="lazy"><img src="611383074_17978714378957289_7852468900373837753_n.jpg" alt="Guest arranging tea at a table" loading="lazy"><img src="573588577_17972056751957289_519395595107830728_n.jpg" alt="Close view of tea being served" loading="lazy">';
+    gallery.hidden = false;
   }
   document.title = tour.title + " — Be Local Travel";
   document.querySelector('meta[name="description"]').content = tour.intro;

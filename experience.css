@@ -42,3 +42,33 @@
 @media(max-width:950px){.cocktails-page .detail-wrap{grid-template-columns:minmax(0,1fr) 300px;column-gap:22px}.cocktails-page .booking-panel{padding:24px}.cocktail-facts{gap:10px 14px}.cocktail-facts div+div{padding-left:12px}}
 @media(max-width:750px){.cocktails-page .detail-wrap{grid-template-columns:1fr}.cocktails-page .detail-head{grid-row:2}.cocktails-page .detail-photo{grid-row:3;height:330px}.cocktails-page .detail-columns{display:contents}.cocktails-page .booking-panel{grid-column:1;grid-row:5;position:static;margin:22px 0 0}.cocktails-page .cocktail-facts{grid-row:4}.cocktails-page .detail-copy{grid-row:6;padding-top:45px}.cocktails-page .more-tours{grid-row:7}.cocktail-facts div+div{border:0;padding-left:0}}
 @media(max-width:620px){.cocktails-page .detail-head h1{font-size:30px}.cocktails-page .detail-photo{height:260px}.cocktail-facts{display:grid;grid-template-columns:1fr 1fr}.cocktail-facts div{display:block}.cocktail-facts strong{display:block;margin-top:3px}}
+
+/* A compact gallery using photographs from the operator's Hoi An collection. */
+.cocktails-page .detail-photo{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:8px;height:390px}
+.cocktails-page .detail-photo>img{min-width:0}
+.cocktail-gallery{display:grid;grid-template-rows:1fr 1fr;gap:8px;min-height:0;overflow:hidden}
+.cocktail-gallery[hidden],.gallery-caption[hidden]{display:none}
+.cocktail-gallery img{width:100%;height:100%;min-height:0;object-fit:cover;display:block}
+.cocktail-gallery img:first-child{object-position:center 62%}
+.cocktail-gallery img:last-child{object-position:center 65%}
+.gallery-caption{grid-column:1;grid-row:4;font-size:12px;color:#68756e;margin:9px 0 0;line-height:1.5}
+.cocktails-page .cocktail-facts{grid-row:5}
+.cocktails-page .detail-copy{grid-row:6}
+.cocktails-page .booking-panel{grid-row:3/7}
+@media(max-width:750px){.cocktails-page .detail-photo{grid-row:3;height:310px}.gallery-caption{grid-row:4}.cocktails-page .cocktail-facts{grid-row:5}.cocktails-page .booking-panel{grid-row:6}.cocktails-page .detail-copy{grid-row:7}.cocktails-page .more-tours{grid-row:8}}
+@media(max-width:620px){.cocktails-page .detail-photo{height:245px;gap:5px}.cocktail-gallery{gap:5px}}
+
+/* A fuller image gallery for the calligraphy and tea experience. */
+.calligraphy-page .detail-photo{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;height:470px}
+.calligraphy-page .detail-photo>img{min-width:0}
+.calligraphy-page .cocktail-gallery{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.calligraphy-page .cocktail-gallery img:first-child{grid-column:1/-1}
+.calligraphy-page .cocktail-gallery{grid-column:2/4}
+@media(max-width:750px){.calligraphy-page .detail-photo{grid-template-columns:1.3fr 1fr;height:350px}.calligraphy-page .cocktail-gallery{grid-column:2;grid-template-columns:1fr;grid-template-rows:repeat(3,1fr)}.calligraphy-page .cocktail-gallery img:first-child{grid-column:1}}
+
+/* Five genuine cocktail photographs, with four supporting views. */
+.cocktails-page .detail-photo{grid-template-columns:minmax(0,1.22fr) minmax(0,1fr);height:430px}
+.cocktails-page .cocktail-gallery{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.cocktails-page .cocktail-gallery img:first-child,.cocktails-page .cocktail-gallery img:last-child{object-position:center}
+@media(max-width:750px){.cocktails-page .detail-photo{height:330px}}
+@media(max-width:620px){.cocktails-page .detail-photo{height:260px}}

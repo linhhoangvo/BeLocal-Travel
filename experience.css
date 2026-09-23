@@ -72,3 +72,8 @@
 .cocktails-page .cocktail-gallery img:first-child,.cocktails-page .cocktail-gallery img:last-child{object-position:center}
 @media(max-width:750px){.cocktails-page .detail-photo{height:330px}}
 @media(max-width:620px){.cocktails-page .detail-photo{height:260px}}
+
+.calligraphy-page .detail-photo{grid-template-columns:1.22fr 1fr}
+.calligraphy-page .cocktail-gallery{grid-column:2;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}
+.calligraphy-page .cocktail-gallery img:first-child{grid-column:auto}
+@media(max-width:750px){.calligraphy-page .cocktail-gallery{grid-column:2;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}}

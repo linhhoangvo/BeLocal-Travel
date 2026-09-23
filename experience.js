@@ -38,8 +38,8 @@ const tours = {
     intro: "Slow down for an introduction to calligraphy and tea in Hoi An.",
     description: "Make space for a quieter cultural experience. Discover the care and attention behind calligraphy while sharing a cup of tea.",
     highlights: ["Try a traditional art", "Enjoy tea in a relaxed setting", "Take home a deeper connection to local craft"],
-    image: "745342026_18001909010957289_1634909492722903595_n.jpg",
-    alt: "Tea being prepared at a local table",
+    image: "image(20260923-103723).png",
+    alt: "Guests showing their calligraphy work with a local teacher",
     bookingUrl: operatorUrl
   },
   tailor: {
@@ -75,7 +75,7 @@ if (!tour) {
   if (key === "calligraphy") {
     document.body.classList.add("calligraphy-page");
     const gallery = document.getElementById("cocktail-gallery");
-    gallery.innerHTML = '<img src="743811501_18001909043957289_4521587935079853568_n.jpg" alt="Tea being poured into cups" loading="lazy"><img src="611383074_17978714378957289_7852468900373837753_n.jpg" alt="Guest arranging tea at a table" loading="lazy"><img src="573588577_17972056751957289_519395595107830728_n.jpg" alt="Close view of tea being served" loading="lazy">';
+    gallery.innerHTML = '<img src="image(20260923-103745).png" alt="Guest practicing calligraphy with a teacher" loading="lazy"><img src="743811501_18001909043957289_4521587935079853568_n.jpg" alt="Tea being poured into cups" loading="lazy"><img src="image(20260923-103758).png" alt="Calligraphy lesson in Hoi An" loading="lazy"><img src="611383074_17978714378957289_7852468900373837753_n.jpg" alt="Guest arranging tea at a table" loading="lazy">';
     gallery.hidden = false;
   }
   document.title = tour.title + " — Be Local Travel";

@@ -7,3 +7,38 @@
 .booking-panel h2{font-size:30px}
 .more-tours a{font-size:18px}
 @media(max-width:620px){.detail-head h1{font-size:36px}.detail-copy h2,.more-tours h2{font-size:30px}}
+
+/* Cocktail experience: a practical editorial tour page. */
+.cocktails-page .detail-head{padding:42px 0 32px}
+.cocktails-page .detail-head h1{max-width:760px;margin:15px 0;font-size:clamp(38px,3.6vw,52px)}
+.cocktails-page .detail-head p{font-size:17px}
+.cocktails-page .detail-photo{height:clamp(350px,39vw,510px);display:grid;grid-template-columns:1.15fr .85fr;gap:10px}
+.cocktails-page .detail-photo>img{min-width:0;object-position:center 58%}
+.cocktail-scene{position:relative;min-width:0;overflow:hidden}
+.cocktail-scene img{width:100%;height:100%;object-fit:cover;object-position:70% center}
+.cocktail-scene span{position:absolute;bottom:14px;right:16px;padding:7px 10px;background:rgba(28,45,42,.75);color:#fff;font-size:11px;letter-spacing:.05em}
+.cocktail-facts{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid #cbd0c5;padding:28px 0;gap:18px}
+.cocktail-facts[hidden],.cocktail-extra[hidden],.cocktail-scene[hidden]{display:none}
+.cocktail-facts div+div{border-left:1px solid #cbd0c5;padding-left:25px}
+.cocktail-facts span,.cocktail-section-label{display:block;font-size:11px;letter-spacing:.16em;font-weight:700;color:#996b3c;text-transform:uppercase}
+.cocktail-facts strong{display:block;margin-top:7px;font-size:16px;font-weight:600}
+.cocktails-page .detail-columns{padding-top:58px;gap:clamp(45px,6vw,90px)}
+.cocktails-page .detail-copy>h2{font-size:clamp(30px,2.6vw,38px)}
+.cocktails-page .detail-copy>h3{margin-top:34px}
+.cocktails-page .detail-copy .detail-disclaimer{display:none}
+.cocktail-extra{margin-top:58px}
+.cocktail-extra h3{font-size:26px;margin:16px 0 14px}
+.cocktail-extra>p{font-size:16px;color:#4e605b;line-height:1.75;margin:0 0 28px}
+.cocktail-route{border-top:1px solid #cbd0c5;margin-bottom:58px}
+.cocktail-route>div{display:grid;grid-template-columns:90px minmax(130px,1fr) 1.4fr;gap:16px;align-items:baseline;padding:20px 0;border-bottom:1px solid #cbd0c5}
+.cocktail-route span{font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#996b3c;font-weight:700}
+.cocktail-route strong{font:500 20px Fraunces,Georgia,serif}
+.cocktail-route p{font-size:14px;color:#52635f;margin:0}
+.cocktail-inclusions{margin:18px 0 50px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.cocktail-inclusions p{margin:0;background:#eeeade;padding:18px 20px;font-size:15px;line-height:1.5}
+.cocktail-inclusions p::before{content:'✓';color:#a56c34;margin-right:10px;font-weight:700}
+.cocktail-practical{border-top:1px solid #cbd0c5;padding-top:17px}
+.cocktail-practical h3{margin-top:16px}
+.cocktail-practical p{font-size:15px;line-height:1.7;color:#4e605b;margin:9px 0}
+@media(max-width:850px){.cocktail-facts{grid-template-columns:repeat(2,1fr)}.cocktail-facts div:nth-child(3){border-left:0;padding-left:0}}
+@media(max-width:620px){.cocktails-page .detail-head h1{font-size:36px}.cocktails-page .detail-photo{height:auto;grid-template-columns:1fr;gap:7px}.cocktails-page .detail-photo>img{height:300px}.cocktail-scene{height:190px}.cocktail-facts{padding:22px 0;gap:20px 10px}.cocktail-facts div+div{padding-left:15px}.cocktail-facts strong{font-size:14px}.cocktail-route>div{grid-template-columns:1fr;gap:5px}.cocktail-route strong{font-size:19px}.cocktail-inclusions{grid-template-columns:1fr}}

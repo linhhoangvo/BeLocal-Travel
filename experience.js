@@ -3,9 +3,9 @@ const tours = {
   cocktails: {
     title: "Secret Cocktail Bars & Local Food",
     category: "FOOD & DRINK",
-    intro: "An evening of hidden bars, local flavors, and stories tucked into Hoi An’s old streets.",
-    description: "Follow a local guide through the historic center, stopping for cocktails and Hoi An food along the way. This is a relaxed way to discover places you might otherwise walk past.",
-    highlights: ["Discover tucked-away bars in the old town", "Enjoy cocktails and local food", "Hear stories about Hoi An from your guide"],
+    intro: "Hidden bars, Hoi An flavours, and the stories between them.",
+    description: "The old town changes after dark. Follow a local guide through its lanes and into places you might walk straight past, tasting cocktails and Hoi An food as you go.",
+    highlights: ["A small group of no more than 8 guests", "Cocktails, local food, and dessert along the way", "Non-alcoholic drinks and vegetarian food are available"],
     image: "IMG_0253%20(3).jpg",
     alt: "Local dishes served during a Hoi An food experience",
     bookingUrl: "https://www.getyourguide.com/hoi-an-l831/hoi-an-secret-cocktail-bars-local-food-experience-t1412677/",
@@ -59,6 +59,14 @@ if (!tour) {
   document.getElementById("detail").innerHTML = '<div class="not-found"><h1>Experience not found</h1><p>Explore our Hoi An tours and find one that feels right for you.</p><a class="booking-button" href="index.html#tours">See all experiences ↗</a></div>';
   document.title = "Experience not found — Be Local Travel";
 } else {
+  if (key === "cocktails") {
+    document.body.classList.add("cocktails-page");
+    document.getElementById("cocktail-facts").hidden = false;
+    document.getElementById("cocktail-extra").hidden = false;
+    document.getElementById("cocktail-scene").hidden = false;
+    document.querySelector(".detail-copy h2").innerHTML = "A night through <em>Hoi An.</em>";
+    document.getElementById("booking-description").textContent = "Choose a date and the number of guests to see the live price and available start times.";
+  }
   document.title = tour.title + " — Be Local Travel";
   document.querySelector('meta[name="description"]').content = tour.intro;
   document.getElementById("tour-category").textContent = "— " + tour.category + " / HOI AN";

@@ -9,8 +9,8 @@
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23233c39'/%3E%3Ctext x='12' y='47' font-size='42' font-family='Georgia' fill='%23f3c87e'%3EB%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
-  <link rel="stylesheet" href="experience.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="experience.css?v=4">
 </head>
 <body>
   <header class="header">
@@ -24,7 +24,13 @@
       <div><div class="eyebrow" id="tour-category"></div><h1 id="tour-title"></h1><p id="tour-intro"></p></div>
       <span class="place-tag">HOI AN · VIETNAM</span>
     </div>
-    <div class="detail-photo"><img id="tour-photo" alt=""></div>
+    <div class="detail-photo"><img id="tour-photo" alt=""><div class="cocktail-scene" id="cocktail-scene" hidden><img src="hoi-an-street.png" alt="Illustrative Hoi An street scene"><span>Hoi An after hours · illustrative scene</span></div></div>
+    <div class="cocktail-facts" id="cocktail-facts" hidden>
+      <div><span>Duration</span><strong>4 hours</strong></div>
+      <div><span>Group</span><strong>Up to 8 guests</strong></div>
+      <div><span>Guide</span><strong>English speaking</strong></div>
+      <div><span>Meet</span><strong>Hoi An Old Town</strong></div>
+    </div>
     <div class="detail-columns">
       <div class="detail-copy">
         <div class="eyebrow">— THE EXPERIENCE</div>
@@ -32,6 +38,19 @@
         <p id="tour-description"></p>
         <h3>What to look forward to</h3>
         <ul id="tour-highlights"></ul>
+        <div class="cocktail-extra" id="cocktail-extra" hidden>
+          <div class="cocktail-section-label">THE EVENING, AT A GLANCE</div>
+          <h3>From the first sip to the last bite</h3>
+          <p>Meet your guide in the historic centre, then follow the old streets and tucked-away lanes between drinks and local food. The stops remain a surprise, so each doorway feels like a discovery.</p>
+          <div class="cocktail-route">
+            <div><span>Start</span><strong>Meet in Hoi An Old Town</strong><p>Begin at 26 Phan Boi Chau and get to know your guide.</p></div>
+            <div><span>Explore</span><strong>Hidden bars & local flavours</strong><p>Visit discreet spots for cocktails, street food, and stories of the town.</p></div>
+            <div><span>Finish</span><strong>Dessert & a final toast</strong><p>Enjoy a sweet stop, then a last drink before returning to the meeting area.</p></div>
+          </div>
+          <div class="cocktail-section-label">WHAT'S INCLUDED</div>
+          <div class="cocktail-inclusions"><p>Drinks served on the tour, with non-alcoholic choices</p><p>Food served on the tour; vegetarian options available</p><p>English-speaking local guide</p></div>
+          <div class="cocktail-practical"><h3>Good to know</h3><p><strong>Meeting point:</strong> 26 Phan Boi Chau, Hoi An. The walk returns to the same area.</p><p><strong>Age:</strong> This experience is for adults aged 18 and over.</p><p><strong>Other costs:</strong> Extra food and drinks, personal expenses, and tips are not included.</p><p>Stops and timing can change. Your booking confirmation has the final meeting and departure details.</p></div>
+        </div>
         <p class="detail-disclaimer">The route and inclusions may vary. Check the booking listing for current details before reserving.</p>
       </div>
       <aside class="booking-panel" aria-labelledby="booking-title">
@@ -46,6 +65,6 @@
     <section class="more-tours"><div class="eyebrow">— KEEP EXPLORING</div><h2>More ways to <em>be local.</em></h2><div id="more-links"></div></section>
   </main>
   <footer><div class="footer-main"><a class="brand" href="index.html"><b>B<span>·</span></b><strong>BE LOCAL<small>TRAVEL</small></strong></a><p>Go further into the places you visit.</p><a href="index.html#tours">See all experiences ↗</a></div><div class="footer-end"><span>© <span id="year">2026</span> Be Local Travel</span><span>Made for curious travelers.</span></div></footer>
-  <script src="experience.js"></script>
+  <script src="experience.js?v=4"></script>
 </body>
 </html>

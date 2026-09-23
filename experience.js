@@ -105,7 +105,18 @@ if (!tour) {
     if (id === key) continue;
     const a = document.createElement("a");
     a.href = "experience.html?tour=" + encodeURIComponent(id);
-    a.textContent = other.title + " ↗";
+    a.className = "more-tour-card";
+    const img = document.createElement("img");
+    img.src = other.image;
+    img.alt = other.alt;
+    img.loading = "lazy";
+    const label = document.createElement("span");
+    label.textContent = other.category;
+    const title = document.createElement("strong");
+    title.textContent = other.title;
+    const arrow = document.createElement("b");
+    arrow.textContent = "↗";
+    a.append(img, label, title, arrow);
     document.getElementById("more-links").append(a);
   }
 }

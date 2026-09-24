@@ -204,3 +204,21 @@
 .booking-panel>p{font-size:14px}
 .more-tours a{font-family:'Cormorant Garamond',Georgia,serif;font-size:27px}
 @media(max-width:620px){.detail-head h1{font-size:50px}}
+
+/* MO Bedding palette on tour detail and booking pages. */
+.detail-wrap{color:var(--ink)}
+.back-link,.detail-head p,.detail-copy>p,.village-page .village-section p,.village-page .village-section li,.village-page .cocktail-extra>p{color:var(--muted)}
+.detail-copy h2 em,.more-tours h2 em{color:var(--clay)}
+.cocktail-facts,.cocktail-practical,.more-tours{border-color:var(--line)}
+.booking-panel,.village-page .booking-panel{background:var(--ivory)}
+.booking-panel h2,.village-page .booking-panel h2{color:var(--ink)}
+.booking-panel>p,.booking-next p{color:var(--muted)}
+.booking-overline,.booking-next span,.village-page .booking-overline{color:var(--clay)}
+.booking-button,.village-page .booking-button{background:var(--moss);color:#fff}
+.booking-button:hover,.village-page .booking-button:hover{background:#343d34}
+.booking-next{border-color:var(--line)}
+.more-tours.related-cards .more-tour-card,.cocktails-page .more-tours.related-cards .more-tour-card{background:#fff;border-color:var(--line)}
+.more-tours.related-cards .more-tour-card strong,.cocktails-page .more-tours.related-cards .more-tour-card .more-tour-copy strong,.village-page .village-itinerary strong{color:var(--ink)}
+.more-tours.related-cards .more-tour-card p{color:var(--muted)}
+.more-tours.related-cards .more-tour-card .more-tour-copy span,.cocktails-page .more-tours.related-cards .more-tour-card .more-tour-copy span{color:var(--clay);border-color:var(--line)}
+.more-tours.related-cards .more-tour-card b,.cocktails-page .more-tours.related-cards .more-tour-card b{color:var(--moss)}

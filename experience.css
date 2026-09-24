@@ -157,3 +157,8 @@
 @media(max-width:1050px){.more-tours.related-cards>div:last-child,.cocktails-page .more-tours.related-cards>div:last-child{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:620px){.more-tours.related-cards,.cocktails-page .more-tours.related-cards{margin-top:65px;padding-top:35px}.more-tours.related-cards>div:last-child,.cocktails-page .more-tours.related-cards>div:last-child{gap:14px}.more-tours.related-cards .more-tour-card img,.cocktails-page .more-tours.related-cards .more-tour-card img{aspect-ratio:1.1}.cocktails-page .more-tours.related-cards .more-tour-card .more-tour-copy,.more-tours.related-cards .more-tour-card .more-tour-copy{padding:13px}.more-tours.related-cards .more-tour-card strong,.cocktails-page .more-tours.related-cards .more-tour-card .more-tour-copy strong{font-size:15px}.more-tours.related-cards .more-tour-card p{font-size:12px;line-height:1.45;margin:9px 0 12px}.more-tours.related-cards .more-tour-card b,.cocktails-page .more-tours.related-cards .more-tour-card b{width:29px;height:29px;font-size:16px}}
 @media(max-width:420px){.more-tours.related-cards>div:last-child,.cocktails-page .more-tours.related-cards>div:last-child{grid-template-columns:1fr}.more-tours.related-cards .more-tour-card img,.cocktails-page .more-tours.related-cards .more-tour-card img{aspect-ratio:1.6}}
+
+/* Let spacing separate the Tra Nhieu sections instead of rules. */
+.village-page .cocktail-facts,.village-page .cocktail-practical,.village-page .more-tours,.village-page .footer-end{border:0}
+.village-page .cocktail-facts div+div{border:0;padding-left:0}
+.village-page .more-tours.related-cards .more-tour-card .more-tour-copy span{border-top:0;padding-top:0}

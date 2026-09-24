@@ -117,7 +117,6 @@
 .village-page .booking-panel{background:#fffdf8}
 @media(max-width:750px){.village-page .booking-panel{margin-top:22px}.village-page .detail-copy{padding-top:42px}}
 
-
 /* Related tours read as an editorial list, with every destination visible. */
 .more-tours{max-width:960px;margin-left:auto;margin-right:auto}
 .more-tours>div:last-child,.cocktails-page .more-tours>div:last-child{display:flex;flex-direction:column;gap:0;overflow:visible;padding:0;margin-top:25px}
@@ -133,7 +132,6 @@
 .more-tours .more-tour-card:focus-visible{outline:2px solid #243b3a;outline-offset:3px}
 @media(max-width:620px){.more-tours .more-tour-card,.cocktails-page .more-tour-card{gap:15px;padding:15px 0}.more-tours .more-tour-card img,.cocktails-page .more-tour-card img{flex-basis:105px;width:105px;height:90px}.more-tour-copy{gap:5px}.more-tours .more-tour-card strong,.cocktails-page .more-tour-card strong{font-size:18px}.more-tours .more-tour-card b,.cocktails-page .more-tour-card b{font-size:19px}}
 
-
 /* Keep the booking box in its own section, and align each tour name with its photo. */
 .cocktails-page .booking-panel{position:static}
 .cocktails-page .more-tours{width:100%;max-width:980px;justify-self:center}
@@ -141,3 +139,20 @@
 .cocktails-page .more-tour-card .more-tour-copy span{align-self:flex-start;letter-spacing:.12em}
 .cocktails-page .more-tour-card .more-tour-copy strong{align-self:flex-start;font-size:clamp(18px,2vw,23px);line-height:1.25;letter-spacing:normal}
 .cocktails-page .more-tour-card b{grid-column:auto;grid-row:auto}
+
+/* Photo-first related experiences, based on the supplied card reference. */
+.more-tours.related-cards,.cocktails-page .more-tours.related-cards{width:100%;max-width:none;margin-top:86px;padding-top:48px}
+.more-tours.related-cards h2{margin:13px 0 28px;font-size:clamp(29px,2.5vw,38px)}
+.more-tours.related-cards>div:last-child,.cocktails-page .more-tours.related-cards>div:last-child{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;overflow:visible;margin-top:0;padding:0}
+.more-tours.related-cards .more-tour-card,.cocktails-page .more-tours.related-cards .more-tour-card{position:relative;display:flex;flex-direction:column;align-items:stretch;gap:0;min-width:0;width:auto;padding:0;border:1px solid #deded4;border-radius:13px;background:#fff;overflow:hidden;transition:box-shadow .2s,transform .2s}
+.more-tours.related-cards .more-tour-card:first-child{border-top:1px solid #deded4}
+.more-tours.related-cards .more-tour-card:hover{box-shadow:0 12px 30px rgba(28,47,44,.11);transform:translateY(-3px)}
+.more-tours.related-cards .more-tour-card img,.cocktails-page .more-tours.related-cards .more-tour-card img{flex:none;width:100%;height:auto;aspect-ratio:1.24;object-fit:cover}
+.cocktails-page .more-tours.related-cards .more-tour-card .more-tour-copy,.more-tours.related-cards .more-tour-card .more-tour-copy{display:flex;flex:1;flex-direction:column;align-self:stretch;align-items:stretch;gap:0;padding:19px 19px 17px}
+.more-tours.related-cards .more-tour-card strong,.cocktails-page .more-tours.related-cards .more-tour-card .more-tour-copy strong{align-self:auto;font:600 clamp(17px,1.4vw,21px)/1.35 'DM Sans',sans-serif;letter-spacing:-.02em;color:#243b3a}
+.more-tours.related-cards .more-tour-card p{margin:12px 0 18px;font:400 14px/1.55 'DM Sans',sans-serif;color:#64736c;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.more-tours.related-cards .more-tour-card .more-tour-copy span,.cocktails-page .more-tours.related-cards .more-tour-card .more-tour-copy span{align-self:stretch;margin-top:auto;padding-top:12px;border-top:1px solid #e4e5df;font:700 10px/1.35 'DM Sans',sans-serif;letter-spacing:.12em;color:#826449}
+.more-tours.related-cards .more-tour-card b,.cocktails-page .more-tours.related-cards .more-tour-card b{position:absolute;top:12px;right:12px;display:grid;place-items:center;width:35px;height:35px;margin:0;border-radius:50%;background:#fff;color:#315149;font-size:19px;box-shadow:0 2px 8px rgba(0,0,0,.12)}
+@media(max-width:1050px){.more-tours.related-cards>div:last-child,.cocktails-page .more-tours.related-cards>div:last-child{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.more-tours.related-cards,.cocktails-page .more-tours.related-cards{margin-top:65px;padding-top:35px}.more-tours.related-cards>div:last-child,.cocktails-page .more-tours.related-cards>div:last-child{gap:14px}.more-tours.related-cards .more-tour-card img,.cocktails-page .more-tours.related-cards .more-tour-card img{aspect-ratio:1.1}.cocktails-page .more-tours.related-cards .more-tour-card .more-tour-copy,.more-tours.related-cards .more-tour-card .more-tour-copy{padding:13px}.more-tours.related-cards .more-tour-card strong,.cocktails-page .more-tours.related-cards .more-tour-card .more-tour-copy strong{font-size:15px}.more-tours.related-cards .more-tour-card p{font-size:12px;line-height:1.45;margin:9px 0 12px}.more-tours.related-cards .more-tour-card b,.cocktails-page .more-tours.related-cards .more-tour-card b{width:29px;height:29px;font-size:16px}}
+@media(max-width:420px){.more-tours.related-cards>div:last-child,.cocktails-page .more-tours.related-cards>div:last-child{grid-template-columns:1fr}.more-tours.related-cards .more-tour-card img,.cocktails-page .more-tours.related-cards .more-tour-card img{aspect-ratio:1.6}}

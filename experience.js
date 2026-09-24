@@ -12,14 +12,15 @@ const tours = {
     direct: true
   },
   coffee: {
-    title: "Hidden Gems Coffee Tour",
-    category: "COFFEE & CULTURE",
-    intro: "Find your way into Hoi An’s café culture, one cup and one quiet corner at a time.",
-    description: "Step away from the busiest streets to discover the cafés and everyday rituals that give Hoi An its character. Take time to taste, talk, and look around.",
-    highlights: ["Explore quieter corners of Hoi An", "Spend time with local coffee culture", "Enjoy an unhurried experience"],
-    image: "eecf952d74f2f9aca0e3.jpg",
-    alt: "Coffee drinks at a Hoi An café",
-    bookingUrl: operatorUrl
+    title: "Hoi An Morning Coffee & Food Tour",
+    category: "FOOD & CULTURE",
+    intro: "Start the day with a local breakfast and Vietnamese coffee, explore Hoi An’s market and back alleys, then unwind beside the river.",
+    description: "Discover the everyday side of Hoi An on a guided morning walk through food stalls, a local market, quiet lanes and a riverside café.",
+    highlights: [],
+    image: "https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=395%2Cheight=400%2Cdpr=2/tour_img/f1e5b7e41010f238703a13b9fe5a2be97f197fb6b0cf93983173bb73ec084482.jpg",
+    alt: "Breakfast and coffee on a guided morning tour in Hoi An",
+    bookingUrl: "https://www.getyourguide.com/hoi-an-l831/hoi-an-morning-coffee-food-tour-t1410747/",
+    direct: true
   },
   "tra-nhieu": {
     title: "Hoi An: Village Cycling, Traditional Crafts & Local Lunch",
@@ -128,6 +129,14 @@ if (!tour) {
     caption.hidden = false;
     gallery.hidden = false;
   }
+  if (key === "coffee") {
+    const gallery = document.getElementById("cocktail-gallery");
+    gallery.innerHTML = '<img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/407ca0fc6ffd0b664a7846c17746a18649012227231bdb48321b99b06a98f11f.jpg" alt="Food stop on the Hoi An morning tour" loading="lazy"><img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/d9f7020cf70ac6cbd5922b9467551f1bd76fe5078263a002a97b6aa4ef390478.jpg" alt="Exploring Hoi An local food" loading="lazy"><img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/094749a8f5e37ab53981e2ba989a0a898ea78fcd027e191557e5d9a0576d55ae.jpg" alt="Morning market and café tour in Hoi An" loading="lazy"><img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/803bd6f29da2c3a52a58a5d8613140ca4326ba2d30763f8b0e5c19141f23a124.jpg" alt="Hoi An morning food experience" loading="lazy">';
+    gallery.hidden = false;
+    const caption = document.getElementById("gallery-caption");
+    caption.textContent = "Photos from the Hoi An morning coffee and food tour.";
+    caption.hidden = false;
+  }
   if (key === "coffee" || key === "tailor") {
     document.body.classList.add("cocktails-page", "village-page");
   }
@@ -141,11 +150,11 @@ if (!tour) {
         before: "For adults aged 18 and over. Extra orders, personal expenses and tips are not included. Confirm the menu, stops and departure time when booking."
       },
       coffee: {
-        highlights: ["Explore quieter corners of Hoi An", "Get to know the town through its coffee culture", "Take time to taste and talk along the way"],
-        description: ["Step away from Hoi An’s busiest streets and discover the cafés and everyday coffee rituals that shape local life. This is an invitation to slow down, enjoy a cup and notice the places around you.", "Specific cafés, drinks, duration and meeting details will be confirmed when this experience becomes available to book."],
-        itinerary: [["Set out in Hoi An", "Begin with a local introduction to the town and its coffee culture."], ["Spend time over coffee", "Visit café spaces and enjoy a slower look at the people and places behind each cup. The exact route is confirmed before booking."]],
-        included: ["Ask us for the current inclusions and drink options before reserving."],
-        before: "The public booking page for this individual experience is not yet available. Contact the team for the route, duration, meeting point and price."
+        highlights: ["Enjoy a Vietnamese breakfast with coffee, juice or a non-caffeinated choice", "Explore the local market and the ingredients Hoi An cooks with", "Follow the back alleys past everyday workshops and food stalls", "Finish at a quiet riverside café"],
+        description: ["Begin your morning with bánh mì or noodles and a Vietnamese coffee, fresh juice or smoothie. Your guide introduces local breakfast traditions before you head to a market filled with herbs, spices, fish and fresh produce.", "Wander through Hoi An’s smaller lanes and notice the routines behind its shopfronts: food vendors preparing their stalls, tailors at work, hairdressers, bakeries and local makers. There is time to taste and photograph the town along the way.", "End at a peaceful café beside the river. Enjoy a final drink and take in the slower rhythm of the town before the tour concludes. Stops and the order of visits may change."],
+        itinerary: [["Meet in Hoi An", "Find your guide at the confirmed meeting point before setting off on foot."], ["Breakfast and local market", "Enjoy a local breakfast and drink, then learn about the ingredients sold in the morning market."], ["Back alleys and local life", "Walk past food stalls, workshops and neighbourhood shops."], ["Riverside café", "Pause for coffee or an alternative drink in a calm setting by the river."]],
+        included: ["English-speaking local guide", "Breakfast and food served as part of the tour; vegetarian choices available on request", "Coffee and other drinks included in the tour; non-caffeinated choices on request", "VAT"],
+        before: "Wear comfortable walking shoes and clothes; bring a camera if you like. The listing notes an 8 am start; confirm the exact time and meeting instructions during booking. Request vegetarian or non-caffeinated options in advance."
       },
       calligraphy: {
         highlights: ["Learn brush techniques from a local calligraphy instructor", "Create a personalised artwork to take home", "Taste three Vietnamese teas and learn about their origins"],
@@ -164,7 +173,7 @@ if (!tour) {
     }[key];
     const facts = document.getElementById("cocktail-facts");
     if (key !== "cocktails") {
-      facts.innerHTML = key === "calligraphy" ? '<div><span>Duration</span><strong>3 hours 30 minutes</strong></div><div><span>Group</span><strong>Up to 6 guests</strong></div><div><span>Host</span><strong>English speaking</strong></div><div><span>Meeting point</span><strong>RAWCOCO COFFEE</strong></div>' : '<div><span>Location</span><strong>Hoi An</strong></div><div><span>Schedule</span><strong>Confirm before booking</strong></div>';
+      facts.innerHTML = key === "coffee" ? '<div><span>Duration</span><strong>3 hours 30 minutes</strong></div><div><span>Group</span><strong>Up to 8 guests</strong></div><div><span>Guide</span><strong>English speaking</strong></div><div><span>Meeting point</span><strong>26 Phan Boi Chau</strong></div>' : key === "calligraphy" ? '<div><span>Duration</span><strong>3 hours 30 minutes</strong></div><div><span>Group</span><strong>Up to 6 guests</strong></div><div><span>Host</span><strong>English speaking</strong></div><div><span>Meeting point</span><strong>RAWCOCO COFFEE</strong></div>' : '<div><span>Location</span><strong>Hoi An</strong></div><div><span>Schedule</span><strong>Confirm before booking</strong></div>';
       facts.hidden = false;
     }
     const extra = document.getElementById("cocktail-extra");
@@ -175,6 +184,11 @@ if (!tour) {
       '<section class="village-section"><h3>' + (key === "cocktails" ? "Included" : "Inclusions") + '</h3>' + list(details.included) + '</section>' +
       '<section class="village-section"><h3>Before you go</h3><p>' + details.before + '</p></section>';
     extra.hidden = false;
+    if (key === "coffee") {
+      extra.insertAdjacentHTML("beforeend", '<section class="village-section"><h3>Not included</h3>' + list(["Transport and insurance", "Meals and drinks outside the listed tour", "Personal expenses and tips"]) + '</section><section class="village-section"><h3>Meeting point</h3><p>Start at 26 Phan Boi Chau, Hoi An, near the Precious Heritage Art Gallery Museum. Your booking confirmation will give the final meeting instructions. <a href="https://maps.google.com/?q=@15.8771389,108.3342656" target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a></p></section><section class="village-section"><h3>Booking and cancellation</h3><p>Free cancellation up to 24 hours before the tour. Reserve now, pay later is offered on the listing; check the terms for your chosen date.</p></section>');
+      document.getElementById("tour-highlights").hidden = true;
+      document.getElementById("tour-highlights").previousElementSibling.hidden = true;
+    }
     if (key === "calligraphy") {
       extra.insertAdjacentHTML("beforeend", '<section class="village-section"><h3>Not included</h3>' + list(["Hotel pickup and drop-off", "Additional food and drinks", "Personal expenses and tips"]) + '</section><section class="village-section"><h3>Meeting point</h3><p>Meet your guide outside RAWCOCO COFFEE. Please wait near the entrance and do not go inside the café. <a href="https://maps.google.com/?q=@15.8783726,108.3272408" target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a></p></section><section class="village-section"><h3>Cancellation</h3><p>Free cancellation up to 24 hours in advance. The booking page also offers reserve now, pay later; check the terms for your selected date.</p></section>');
       document.getElementById("tour-highlights").hidden = true;
@@ -182,8 +196,8 @@ if (!tour) {
     }
     document.querySelector(".detail-copy h2").textContent = "About this tour";
     document.querySelector(".booking-overline").textContent = "HOI AN · " + tour.category;
-    document.getElementById("booking-title").textContent = key === "cocktails" || key === "calligraphy" ? "Check availability" : "Explore available tours";
-    if (key === "cocktails" || key === "calligraphy") document.getElementById("booking-description").textContent = "Select your date and guests to see current times and prices.";
+    document.getElementById("booking-title").textContent = key === "cocktails" || key === "calligraphy" || key === "coffee" ? "Check availability" : "Explore available tours";
+    if (key === "cocktails" || key === "calligraphy" || key === "coffee") document.getElementById("booking-description").textContent = "Select your date and guests to see current times and prices.";
   }
   document.title = tour.title + " — Be Local Travel";
   document.querySelector('meta[name="description"]').content = tour.intro;

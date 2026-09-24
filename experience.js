@@ -22,13 +22,13 @@ const tours = {
     bookingUrl: operatorUrl
   },
   "tra-nhieu": {
-    title: "Tra Nhieu Village Bike Tour with Lunch & Boat Ride",
+    title: "Hoi An: Village Cycling, Traditional Crafts & Local Lunch",
     category: "COUNTRYSIDE",
-    intro: "Cycle beyond Hoi An, share a local lunch, and return to the river for a boat ride.",
-    description: "Follow quieter village paths around Tra Nhieu by bicycle. There is time to take in the countryside, sit down for lunch, and see the area from the water.",
-    highlights: ["Cycle the quieter village paths", "Pause for a local lunch", "Enjoy a boat ride on the water"],
-    image: "IMG_0219%20(2).jpg",
-    alt: "Cycling along a village path near Hoi An",
+    intro: "Cycle through Tra Nhieu Village, meet local families and craftspeople, enjoy a home-cooked lunch, and return along the Thu Bon River by boat.",
+    description: "A guided ride through Hoi An’s countryside, with village crafts, a local family lunch and a river cruise back to town.",
+    highlights: [],
+    image: "https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=395%2Cheight=400%2Cdpr=2/tour_img/53ad56a901851c09c89ce4b494337d899395432a0b3787bfc10988444d03cbf8.jpeg",
+    alt: "Cyclists exploring Tra Nhieu Village",
     bookingUrl: "https://www.getyourguide.com/hoi-an-l831/hoi-an-tra-nhieu-village-bike-tour-with-lunch-boat-ride-t1412703/",
     direct: true
   },
@@ -75,35 +75,42 @@ if (!tour) {
   if (key === "tra-nhieu") {
     document.body.classList.add("cocktails-page", "village-page");
     const gallery = document.getElementById("cocktail-gallery");
-    gallery.innerHTML = '<img src="IMG_0251%20(2).jpg" alt="Village path near Hoi An" loading="lazy"><img src="IMG_0253%20(3).jpg" alt="Local food served in Hoi An" loading="lazy"><img src="IMG_0244%20(2).jpg" alt="Boat on a Hoi An river" loading="lazy"><img src="IMG_0260%20(4).jpg" alt="Guests gathered at a countryside table" loading="lazy">';
+    gallery.innerHTML = '<img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=195%2Cheight=195%2Cdpr=2/tour_img/5efd487ccd3fdcb3b9a1ba929cf48abae40d5c3d21ec017da9076e4fab8574b1.jpeg" alt="Cycling tour in the Hoi An countryside" loading="lazy"><img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=195%2Cheight=195%2Cdpr=2/tour_img/463dac488cb4d86cf529fce95cc05d4aa7d15e1a7688225b69392e01c310f9e1.jpeg" alt="Village craft experience" loading="lazy"><img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=195%2Cheight=195%2Cdpr=2/tour_img/9eb48b10fb83ce90c13de5b2b98956c72648edb81a59885339f44d317249d352.jpg" alt="Local experience in Tra Nhieu" loading="lazy"><img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=195%2Cheight=195%2Cdpr=2/tour_img/54a174ef701b9476b942bbc9602351306075a353d679c4ef722f6a1b96a55036.jpg" alt="Hoi An village cycling tour" loading="lazy">';
     gallery.hidden = false;
     const caption = document.getElementById("gallery-caption");
-    caption.textContent = "Scenes from our Hoi An countryside collection. The exact route and stops may vary.";
+    caption.textContent = "Photos from this experience. The route and stops may vary.";
     caption.hidden = false;
     const facts = document.getElementById("cocktail-facts");
-    facts.innerHTML = '<div><span>Explore</span><strong>By bicycle</strong></div><div><span>Enjoy</span><strong>Local lunch</strong></div><div><span>Finish</span><strong>Boat ride</strong></div>';
+    facts.innerHTML = '<div><span>Duration</span><strong>4 hours 30 minutes</strong></div><div><span>Group</span><strong>Up to 10 guests</strong></div><div><span>Guide</span><strong>English speaking</strong></div><div><span>Pickup</span><strong>Available in Hoi An</strong></div>';
     facts.hidden = false;
     const extra = document.getElementById("cocktail-extra");
     extra.innerHTML = `
       <section class="village-section"><h3>Highlights</h3><ul class="village-highlights">
-        <li>Cycle along quieter village paths beyond Hoi An’s busy streets.</li>
-        <li>Take in the countryside and everyday life around Tra Nhieu.</li>
-        <li>Pause for a local lunch and see the area from the water on a boat ride.</li>
+        <li>Cycle along peaceful village roads with a local guide.</li>
+        <li>Meet local families and see traditional boat building, rice paper making and mat weaving.</li>
+        <li>Learn about local fishing techniques and try your hand at a village craft.</li>
+        <li>Enjoy a home-cooked lunch and a boat ride on the Thu Bon River.</li>
       </ul></section>
       <section class="village-section"><h3>Full description</h3>
-        <p>Leave the Old Town behind and explore the countryside around Tra Nhieu by bicycle. The village paths give you time to slow down and notice the landscape and daily life along the way.</p>
-        <p>During the experience, sit down for a local lunch. A boat ride offers another view of the area before the tour ends. The route and stops can change, so check the details for your chosen date when booking.</p>
+        <p>Meet your guide and cycle out of Hoi An along quiet roads, green fields and shaded village paths. Along the way, learn about daily life in the countryside and the communities beside the river.</p>
+        <p>In Tra Nhieu Village, meet families who keep traditional livelihoods alive. See wooden fishing boats and bamboo basket boats being made, discover how rice paper is produced, and try weaving a sleeping mat. Your guide will introduce the people and stories behind each craft and explain local fishing techniques.</p>
+        <p>After exploring the village, sit down for a home-cooked lunch with a local family. Finish with a boat cruise of about 30 minutes along the Thu Bon River back to Hoi An.</p>
       </section>
       <section class="village-section"><h3>How the tour unfolds</h3><ol class="village-itinerary">
-        <li><strong>Ride into the countryside</strong><p>Explore the quieter paths around Tra Nhieu by bicycle.</p></li>
-        <li><strong>Enjoy lunch</strong><p>Take a break and share a local meal.</p></li>
-        <li><strong>See the river by boat</strong><p>Continue the experience on the water. Confirm the latest route and end point with the booking provider.</p></li>
+        <li><strong>Cycle from Hoi An</strong><p>Start with a guided ride through the countryside on quiet village roads.</p></li>
+        <li><strong>Visit Tra Nhieu Village</strong><p>Meet families, discover local fishing traditions and see crafts including mat weaving and rice paper making.</p></li>
+        <li><strong>Share lunch with a family</strong><p>Enjoy a home-cooked meal in the village.</p></li>
+        <li><strong>Return by river</strong><p>Take a scenic boat cruise along the Thu Bon River. Stops can change with local conditions.</p></li>
       </ol></section>
-      <section class="village-section"><h3>Included</h3><p>Bicycle tour, lunch, and boat ride. Check the booking listing for the full inclusions and meeting instructions.</p></section>
-      <section class="village-section"><h3>Booking and cancellation</h3><p>Choose a date on GetYourGuide to see current departure times, prices, and cancellation terms before paying.</p></section>
-      <section class="village-section"><h3>Good to know</h3><p>Wear comfortable clothes for cycling and bring sun protection. Check your meeting point and any additional requirements in your booking confirmation.</p></section>`;
+      <section class="village-section"><h3>Included</h3><ul class="village-highlights"><li>English-speaking local guide and bicycle</li><li>Bottled water and lunch with a local family</li><li>Thu Bon River boat cruise</li><li>Entrance and activity fees</li></ul></section>
+      <section class="village-section"><h3>Booking and cancellation</h3><p>The listing offers free cancellation up to 24 hours before the tour and a reserve now, pay later option. Check the terms for your selected date before confirming.</p></section>
+      <section class="village-section"><h3>Good to know</h3><p>You need to be able to ride a bicycle. Bring comfortable shoes and clothes, a hat, sunscreen and rain gear. Pickup is available within the listed Hoi An area; confirm your address and departure time during checkout.</p></section>`;
     extra.hidden = false;
     document.querySelector(".detail-copy h2").textContent = "About this tour";
+    const rating = document.createElement("p");
+    rating.className = "tour-rating";
+    rating.textContent = "★ 5.0 · 3 reviews";
+    document.getElementById("tour-title").after(rating);
     document.querySelector(".booking-overline").textContent = "TRA NHIEU · HOI AN";
     document.getElementById("booking-title").textContent = "Find your place on the tour";
     document.getElementById("booking-description").textContent = "See available dates and the current price for your group.";

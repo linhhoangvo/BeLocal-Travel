@@ -107,9 +107,12 @@ if (!tour) {
       <section class="village-section"><h3>Good to know</h3><p>You need to be able to ride a bicycle. Bring comfortable shoes and clothes, a hat, sunscreen and rain gear. Pickup is available within the listed Hoi An area; confirm your address and departure time during checkout.</p></section>`;
     extra.hidden = false;
     document.querySelector(".detail-copy h2").textContent = "About this tour";
-    const rating = document.createElement("p");
+    const rating = document.createElement("a");
     rating.className = "tour-rating";
-    rating.textContent = "★ 5.0 · 3 reviews";
+    rating.href = tour.bookingUrl;
+    rating.target = "_blank";
+    rating.rel = "noopener noreferrer";
+    rating.textContent = "★ 5.0 · 3 reviews on GetYourGuide ↗";
     document.getElementById("tour-title").after(rating);
     document.querySelector(".booking-overline").textContent = "TRA NHIEU · HOI AN";
     document.getElementById("booking-title").textContent = "Find your place on the tour";

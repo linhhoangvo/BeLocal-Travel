@@ -133,11 +133,13 @@ if (!tour) {
     label.textContent = other.category;
     const title = document.createElement("strong");
     title.textContent = other.title;
+    const summary = document.createElement("p");
+    summary.textContent = other.intro;
     const arrow = document.createElement("b");
     arrow.textContent = "↗";
     const copy = document.createElement("span");
     copy.className = "more-tour-copy";
-    copy.append(label, title);
+    copy.append(title, summary, label);
     a.append(img, copy, arrow);
     document.getElementById("more-links").append(a);
   }

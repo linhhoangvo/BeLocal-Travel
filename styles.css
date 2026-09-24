@@ -11,3 +11,25 @@
 @media(max-width:620px){.hero h1{font-size:clamp(36px,8vw,44px)}.section-head h2,.destinations h2{font-size:32px}.about h2{font-size:34px}}
 
 .hero p{font-size:16px}
+
+/* Reviews from the Tra Nhieu listing, with the original source a click away. */
+.guest-stories{background:#f1f4ec;padding:88px 0 94px}
+.review-heading{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:32px}
+.review-heading h2{font-size:clamp(30px,3vw,43px);line-height:1.18;margin:16px 0 9px}
+.review-heading h2 em{color:#ad7135}
+.review-heading p{max-width:550px;margin:0;color:#556761;font-size:15px}
+.review-overview{display:flex;flex-direction:column;align-items:flex-end;gap:7px;flex:none}
+.review-overview strong{font:600 28px/1.1 'DM Sans',sans-serif}
+.review-overview strong span{font-size:17px;letter-spacing:.02em;color:#c4893c}
+.review-overview small{font-size:12px;color:#64746b}
+.review-overview a,.review-card-foot a{font-size:13px;font-weight:700;color:#315d4b;text-decoration:underline;text-underline-offset:3px}
+.review-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.review-card{min-height:240px;padding:26px 28px;background:#fffdf8;border-radius:14px;display:flex;flex-direction:column;box-shadow:0 5px 24px rgba(35,60,57,.045)}
+.review-card-top,.review-card-foot{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.review-card-top span{font-size:16px;letter-spacing:.04em;color:#c4893c}
+.review-card-top small{font-size:12px;color:#758078}
+.review-card>p{font:400 17px/1.6 'DM Sans',sans-serif;color:#344944;margin:20px 0 25px}
+.review-card-foot{margin-top:auto;flex-wrap:wrap}
+.review-card-foot strong{font-size:13px}
+.review-source{font-size:12px;color:#78847a;margin:18px 0 0}
+@media(max-width:750px){.guest-stories{padding:68px 0}.review-heading{align-items:start;flex-direction:column;gap:20px}.review-overview{align-items:flex-start}.review-list{grid-template-columns:1fr}.review-card{min-height:0}}

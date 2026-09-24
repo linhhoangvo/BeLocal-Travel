@@ -103,3 +103,16 @@
 .cocktails-page .more-tour-card strong{font:500 21px/1.18 Fraunces,Georgia,serif;color:#243b3a}
 .cocktails-page .more-tour-card b{margin-left:auto;font-size:20px;font-weight:400;color:#ad7135}
 @media(max-width:620px){.cocktails-page .more-tour-card{min-width:290px;gap:12px}.cocktails-page .more-tour-card img{flex-basis:110px;width:110px;height:88px}.cocktails-page .more-tour-card strong{font-size:18px}}
+
+/* Tra Nhieu: a practical countryside page with room for the photographs. */
+.village-page .detail-head h1{max-width:950px}
+.village-page .detail-photo>img{object-position:center 55%}
+.village-page .cocktail-gallery img{object-position:center 55%}
+.village-page .gallery-caption{margin:11px 0 0}
+.village-page .cocktail-facts{padding-top:22px}
+.village-page .detail-copy{padding-top:40px}
+.village-page .cocktail-extra>p{font-size:16px;line-height:1.7;color:#4e605b;max-width:720px}
+.village-page .cocktail-practical{margin-top:30px;padding-top:6px;border-top:1px solid #cbd0c5}
+.village-page .detail-copy>p{margin-bottom:26px}
+.village-page .booking-panel{background:#fffdf8}
+@media(max-width:750px){.village-page .booking-panel{margin-top:22px}.village-page .detail-copy{padding-top:42px}}

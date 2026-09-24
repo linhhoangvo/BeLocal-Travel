@@ -345,3 +345,7 @@ footer{padding-top:41px}
 
 /* Keep the destination introduction on one line when space allows. */
 @media(min-width:1100px){.destination-showcase .destination-intro p{max-width:none;white-space:nowrap;font-size:13px}}
+
+/* Join the destination cards directly to Notes from Hoi An. */
+#destinations.destination-showcase{padding-bottom:0;margin-bottom:0}
+#destinations+.home-blog{padding-top:0;margin-top:0}

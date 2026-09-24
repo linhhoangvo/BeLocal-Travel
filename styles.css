@@ -342,3 +342,6 @@ footer{padding-top:41px}
 
 /* Shorter desktop footer with comfortable spacing for five links. */
 @media(min-width:901px){.site-footer .footer-content{min-height:250px}.site-footer .footer-photo{padding-top:26px;padding-bottom:26px}.site-footer .footer-links{padding-top:25px;padding-bottom:25px}.site-footer .footer-links>div{gap:8px}.site-footer .footer-links h2{margin-bottom:5px}.site-footer .footer-bottom{padding-top:12px;padding-bottom:12px}}
+
+/* Keep the destination introduction on one line when space allows. */
+@media(min-width:1100px){.destination-showcase .destination-intro p{max-width:none;white-space:nowrap;font-size:13px}}

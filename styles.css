@@ -329,3 +329,8 @@ footer{padding-top:41px}
 /* Taller photos in the experience cards. */
 .tours .photo-card .card-photo{height:300px}
 @media(max-width:620px){.tours .photo-card .card-photo{height:255px}}
+
+/* Close the gap between destinations and Notes from Hoi An. */
+#destinations.destination-showcase{padding-bottom:18px}
+#destinations+.home-blog{padding-top:20px}
+@media(max-width:620px){#destinations.destination-showcase{padding-bottom:14px}#destinations+.home-blog{padding-top:17px}}

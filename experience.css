@@ -175,3 +175,13 @@
 .village-page .village-itinerary li{margin:0 0 22px}
 .village-page .village-itinerary strong{display:block;font-weight:700;color:#243b3a;margin-bottom:3px}
 .village-page .village-itinerary p{margin:0}
+
+/* Warm, compact booking invitation for the village tour. */
+.village-page .booking-panel{border:0;border-radius:16px;background:#e9eee5;padding:34px 32px 29px}
+.village-page .booking-overline{color:#667968;font-size:11px;letter-spacing:.14em}
+.village-page .booking-panel h2{max-width:290px;font-size:26px;line-height:1.22;margin:15px 0 12px}
+.village-page .booking-panel>p{font-size:15px;line-height:1.6;color:#4e605b;margin:0}
+.village-page .booking-button{border-radius:8px;padding:18px 20px;margin-top:26px;background:#27483e;font-size:14px}
+.village-page .booking-button:hover{background:#356252}
+.village-page .booking-note{margin:14px 0 0!important;font-size:12px!important;color:#69786d!important}
+@media(max-width:750px){.village-page .booking-panel{padding:28px}}

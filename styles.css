@@ -52,3 +52,10 @@
 .review-card-foot{display:block}.review-card-foot a{font-size:12px}
 .review-source{margin-top:20px}
 @media(max-width:750px){.review-overview{padding:22px;align-items:flex-start}.review-overview small{width:100%}.review-overview a{margin-top:8px}.review-card{padding:23px}.review-verified{margin-left:56px;width:100%}}
+
+/* Keep the introduction together above the tour photos. */
+.tours{padding-top:76px}
+.tours .section-head{display:block;max-width:790px;margin-bottom:34px}
+.tours .section-head h2{font-size:clamp(33px,3vw,44px);line-height:1.14;margin:13px 0 13px}
+.tours .section-head p{max-width:620px;margin:0;font-size:15px;line-height:1.65}
+@media(max-width:620px){.tours{padding-top:63px}.tours .section-head{margin-bottom:28px}.tours .section-head h2{font-size:32px}}

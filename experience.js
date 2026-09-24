@@ -17,7 +17,7 @@ const tours = {
     intro: "Start the day with a local breakfast and Vietnamese coffee, explore Hoi An’s market and back alleys, then unwind beside the river.",
     description: "Discover the everyday side of Hoi An on a guided morning walk through food stalls, a local market, quiet lanes and a riverside café.",
     highlights: [],
-    image: "https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=395%2Cheight=400%2Cdpr=2/tour_img/f1e5b7e41010f238703a13b9fe5a2be97f197fb6b0cf93983173bb73ec084482.jpg",
+    image: "coffee-tour-7.jpg",
     alt: "Breakfast and coffee on a guided morning tour in Hoi An",
     bookingUrl: "https://www.getyourguide.com/hoi-an-l831/hoi-an-morning-coffee-food-tour-t1410747/",
     direct: true
@@ -131,10 +131,10 @@ if (!tour) {
   }
   if (key === "coffee") {
     const gallery = document.getElementById("cocktail-gallery");
-    gallery.innerHTML = '<img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/407ca0fc6ffd0b664a7846c17746a18649012227231bdb48321b99b06a98f11f.jpg" alt="Food stop on the Hoi An morning tour" loading="lazy"><img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/d9f7020cf70ac6cbd5922b9467551f1bd76fe5078263a002a97b6aa4ef390478.jpg" alt="Exploring Hoi An local food" loading="lazy"><img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/094749a8f5e37ab53981e2ba989a0a898ea78fcd027e191557e5d9a0576d55ae.jpg" alt="Morning market and café tour in Hoi An" loading="lazy"><img src="https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/803bd6f29da2c3a52a58a5d8613140ca4326ba2d30763f8b0e5c19141f23a124.jpg" alt="Hoi An morning food experience" loading="lazy">';
+    gallery.innerHTML = "<img src=\"coffee-tour-2.jpg\" alt=\"A local enjoying coffee outside a Hoi An caf\u00e9\" loading=\"lazy\"><img src=\"coffee-tour-4.jpg\" alt=\"B\u00e1nh m\u00ec served during the Hoi An morning food tour\" loading=\"lazy\"><img src=\"coffee-tour-3.jpg\" alt=\"Vietnamese coffees enjoyed together at a Hoi An caf\u00e9\" loading=\"lazy\"><img src=\"coffee-tour-6.jpg\" alt=\"Vietnamese drip coffee in a local caf\u00e9\" loading=\"lazy\"><img src=\"coffee-tour-1.jpg\" alt=\"A cup of Vietnamese coffee on a ceramic plate\" loading=\"lazy\"><img src=\"coffee-tour-5.jpg\" alt=\"Coffee and flowers at a Hoi An caf\u00e9\" loading=\"lazy\">";
     gallery.hidden = false;
     const caption = document.getElementById("gallery-caption");
-    caption.textContent = "Photos from the Hoi An morning coffee and food tour.";
+    caption.textContent = "Scenes from the Hoi An morning coffee and food tour.";
     caption.hidden = false;
   }
   if (key === "coffee" || key === "tailor") {

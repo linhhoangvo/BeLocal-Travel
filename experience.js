@@ -22,11 +22,11 @@ const tours = {
     bookingUrl: operatorUrl
   },
   "tra-nhieu": {
-    title: "Tra Nhieu Village Bike Tour",
+    title: "Tra Nhieu Village Bike Tour with Lunch & Boat Ride",
     category: "COUNTRYSIDE",
-    intro: "Trade the bustle of the old town for village paths, a boat ride, and a local lunch.",
-    description: "Cycle through Tra Nhieu’s countryside and enjoy a different pace of life beyond Hoi An. The experience brings together village scenery, lunch, and time on the water.",
-    highlights: ["Explore village paths by bicycle", "Enjoy a local lunch", "Take a boat ride"],
+    intro: "Cycle beyond Hoi An, share a local lunch, and return to the river for a boat ride.",
+    description: "Follow quieter village paths around Tra Nhieu by bicycle. There is time to take in the countryside, sit down for lunch, and see the area from the water.",
+    highlights: ["Cycle the quieter village paths", "Pause for a local lunch", "Enjoy a boat ride on the water"],
     image: "IMG_0219%20(2).jpg",
     alt: "Cycling along a village path near Hoi An",
     bookingUrl: "https://www.getyourguide.com/hoi-an-l831/hoi-an-tra-nhieu-village-bike-tour-with-lunch-boat-ride-t1412703/",
@@ -71,6 +71,25 @@ if (!tour) {
     document.querySelector(".booking-overline").textContent = "BOOK THIS TOUR";
     document.getElementById("booking-title").textContent = "Check availability";
     document.getElementById("booking-description").textContent = "Select your date and guests to see current times and prices.";
+  }
+  if (key === "tra-nhieu") {
+    document.body.classList.add("cocktails-page", "village-page");
+    const gallery = document.getElementById("cocktail-gallery");
+    gallery.innerHTML = '<img src="IMG_0251%20(2).jpg" alt="Village path near Hoi An" loading="lazy"><img src="IMG_0253%20(3).jpg" alt="Local food served in Hoi An" loading="lazy"><img src="IMG_0244%20(2).jpg" alt="Boat on a Hoi An river" loading="lazy"><img src="IMG_0260%20(4).jpg" alt="Guests gathered at a countryside table" loading="lazy">';
+    gallery.hidden = false;
+    const caption = document.getElementById("gallery-caption");
+    caption.textContent = "Scenes from our Hoi An countryside collection. The exact route and stops may vary.";
+    caption.hidden = false;
+    const facts = document.getElementById("cocktail-facts");
+    facts.innerHTML = '<div><span>Explore</span><strong>By bicycle</strong></div><div><span>Enjoy</span><strong>Local lunch</strong></div><div><span>Finish</span><strong>Boat ride</strong></div>';
+    facts.hidden = false;
+    const extra = document.getElementById("cocktail-extra");
+    extra.innerHTML = '<h3>A day beyond the old town</h3><p>Ride through the countryside around Tra Nhieu, stopping to enjoy the slower pace of village life. Lunch and a boat ride round out the experience.</p><div class="cocktail-practical"><h3>Included in the experience</h3><p>Bicycle tour, lunch, and a boat ride. See the booking listing for the full inclusions and meeting instructions for your date.</p><h3>Before you go</h3><p>Wear comfortable clothes for cycling and bring sun protection. Check the latest route, departure time, and availability when booking.</p></div>';
+    extra.hidden = false;
+    document.querySelector(".detail-copy h2").textContent = "About this tour";
+    document.querySelector(".booking-overline").textContent = "BOOK THIS TOUR";
+    document.getElementById("booking-title").textContent = "Check availability";
+    document.getElementById("booking-description").textContent = "Choose your date and guests to see current times and prices.";
   }
   if (key === "calligraphy") {
     document.body.classList.add("calligraphy-page");

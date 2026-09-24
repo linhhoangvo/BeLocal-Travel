@@ -162,3 +162,16 @@
 .village-page .cocktail-facts,.village-page .cocktail-practical,.village-page .more-tours,.village-page .footer-end{border:0}
 .village-page .cocktail-facts div+div{border:0;padding-left:0}
 .village-page .more-tours.related-cards .more-tour-card .more-tour-copy span{border-top:0;padding-top:0}
+
+/* A readable tour guide with clear sections and no dividing rules. */
+.village-page .detail-copy>p{margin-bottom:8px}
+.village-page .village-section{margin-top:43px}
+.village-page .village-section h3{font:600 23px/1.3 'DM Sans',sans-serif;letter-spacing:-.025em;margin:0 0 13px}
+.village-page .village-section p,.village-page .village-section li{font-size:16px;line-height:1.72;color:#4e605b}
+.village-page .village-section p{margin:0 0 13px}
+.village-page .village-highlights{padding-left:20px;margin:0}
+.village-page .village-highlights li{padding-left:4px;margin-bottom:8px}
+.village-page .village-itinerary{list-style:none;margin:0;padding:0}
+.village-page .village-itinerary li{margin:0 0 22px}
+.village-page .village-itinerary strong{display:block;font-weight:700;color:#243b3a;margin-bottom:3px}
+.village-page .village-itinerary p{margin:0}

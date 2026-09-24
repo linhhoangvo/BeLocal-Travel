@@ -252,3 +252,8 @@ footer{padding-top:41px}
  .tours .section-head h2,.section-head h2,.destinations h2,.about h2,.home-blog h2,.home-contact h2{font-size:36px}
  .photo-card h3{font-size:24px}
 }
+
+/* Compact single-line tour titles on wider screens. */
+.photo-card h3{font-size:clamp(16px,1.1vw,20px);line-height:1.2;min-height:0;letter-spacing:-.015em}
+@media(min-width:1100px){.photo-card h3{white-space:nowrap}}
+@media(max-width:1099px){.photo-card h3{white-space:normal;font-size:21px}}

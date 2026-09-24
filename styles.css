@@ -349,3 +349,8 @@ footer{padding-top:41px}
 /* Join the destination cards directly to Notes from Hoi An. */
 #destinations.destination-showcase{padding-bottom:0;margin-bottom:0}
 #destinations+.home-blog{padding-top:0;margin-top:0}
+
+/* Three journal stories across desktop, with responsive columns. */
+.home-blog .blog-stories{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+@media(max-width:900px){.home-blog .blog-stories{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.home-blog .blog-stories{grid-template-columns:1fr}}

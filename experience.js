@@ -84,7 +84,24 @@ if (!tour) {
     facts.innerHTML = '<div><span>Explore</span><strong>By bicycle</strong></div><div><span>Enjoy</span><strong>Local lunch</strong></div><div><span>Finish</span><strong>Boat ride</strong></div>';
     facts.hidden = false;
     const extra = document.getElementById("cocktail-extra");
-    extra.innerHTML = '<h3>A day beyond the old town</h3><p>Ride through the countryside around Tra Nhieu, stopping to enjoy the slower pace of village life. Lunch and a boat ride round out the experience.</p><div class="cocktail-practical"><h3>Included in the experience</h3><p>Bicycle tour, lunch, and a boat ride. See the booking listing for the full inclusions and meeting instructions for your date.</p><h3>Before you go</h3><p>Wear comfortable clothes for cycling and bring sun protection. Check the latest route, departure time, and availability when booking.</p></div>';
+    extra.innerHTML = `
+      <section class="village-section"><h3>Highlights</h3><ul class="village-highlights">
+        <li>Cycle along quieter village paths beyond Hoi An’s busy streets.</li>
+        <li>Take in the countryside and everyday life around Tra Nhieu.</li>
+        <li>Pause for a local lunch and see the area from the water on a boat ride.</li>
+      </ul></section>
+      <section class="village-section"><h3>Full description</h3>
+        <p>Leave the Old Town behind and explore the countryside around Tra Nhieu by bicycle. The village paths give you time to slow down and notice the landscape and daily life along the way.</p>
+        <p>During the experience, sit down for a local lunch. A boat ride offers another view of the area before the tour ends. The route and stops can change, so check the details for your chosen date when booking.</p>
+      </section>
+      <section class="village-section"><h3>How the tour unfolds</h3><ol class="village-itinerary">
+        <li><strong>Ride into the countryside</strong><p>Explore the quieter paths around Tra Nhieu by bicycle.</p></li>
+        <li><strong>Enjoy lunch</strong><p>Take a break and share a local meal.</p></li>
+        <li><strong>See the river by boat</strong><p>Continue the experience on the water. Confirm the latest route and end point with the booking provider.</p></li>
+      </ol></section>
+      <section class="village-section"><h3>Included</h3><p>Bicycle tour, lunch, and boat ride. Check the booking listing for the full inclusions and meeting instructions.</p></section>
+      <section class="village-section"><h3>Booking and cancellation</h3><p>Choose a date on GetYourGuide to see current departure times, prices, and cancellation terms before paying.</p></section>
+      <section class="village-section"><h3>Good to know</h3><p>Wear comfortable clothes for cycling and bring sun protection. Check your meeting point and any additional requirements in your booking confirmation.</p></section>`;
     extra.hidden = false;
     document.querySelector(".detail-copy h2").textContent = "About this tour";
     document.querySelector(".booking-overline").textContent = "BOOK THIS TOUR";

@@ -193,3 +193,14 @@
 .village-page .cocktail-facts{gap:12px 23px}
 .village-page .cocktail-facts div{gap:5px}
 @media(max-width:620px){.village-page .cocktail-facts{grid-template-columns:1fr 1fr;gap:16px}}
+
+/* MO Bedding scale for the experience detail template. */
+.detail-head h1{font-size:clamp(52px,5.6vw,82px);line-height:.99}
+.detail-head p,.detail-copy>p{font-size:14px;line-height:1.7}
+.detail-copy h2,.more-tours h2{font-size:clamp(38px,4vw,58px);line-height:1.04}
+.detail-copy h3{font-size:clamp(29px,3vw,40px);line-height:1.08}
+.detail-copy ul,.detail-copy li{font-size:14px;line-height:1.7}
+.booking-panel h2{font-size:38px;line-height:1.05}
+.booking-panel>p{font-size:14px}
+.more-tours a{font-family:'Cormorant Garamond',Georgia,serif;font-size:27px}
+@media(max-width:620px){.detail-head h1{font-size:50px}}

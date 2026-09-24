@@ -59,3 +59,16 @@
 .tours .section-head h2{font-size:clamp(33px,3vw,44px);line-height:1.14;margin:13px 0 13px}
 .tours .section-head p{max-width:620px;margin:0;font-size:15px;line-height:1.65}
 @media(max-width:620px){.tours{padding-top:63px}.tours .section-head{margin-bottom:28px}.tours .section-head h2{font-size:32px}}
+
+/* A clear, practical home navigation with the Be Local identity. */
+.home-header{height:94px;padding:0 clamp(24px,4vw,68px);background:#fff;gap:30px}
+.home-header .brand{gap:13px}.home-header .brand b{width:45px;height:45px;font-size:29px}
+.home-header .brand strong{font-size:16px;letter-spacing:.12em}.home-header .brand small{font-size:10px}
+.home-header>nav{gap:clamp(19px,2.4vw,39px);align-items:center;margin-left:auto}
+.home-header>nav a{font-size:14px;font-weight:600;white-space:nowrap;transition:color .2s}
+.home-header>nav a:hover,.home-header>nav a.current{color:#a46b35;text-decoration:none}
+.home-header .nav-cta{display:inline-flex;align-items:center;gap:23px;padding:15px 21px;border:0;border-radius:8px;background:#477d49;color:#fff;font-size:13px;transition:background .2s}
+.home-header .nav-cta:hover{background:#356a3c;text-decoration:none}
+.mobile-menu{display:none}
+@media(max-width:950px){.home-header{height:78px}.home-header>nav{display:none}.home-header .nav-cta{margin-left:auto}.mobile-menu{display:block;position:relative}.mobile-menu summary{list-style:none;cursor:pointer;font-size:13px;font-weight:700;padding:12px}.mobile-menu summary::-webkit-details-marker{display:none}.mobile-menu summary span{margin-left:5px}.mobile-menu nav{display:flex;position:absolute;z-index:10;right:0;top:42px;width:210px;flex-direction:column;gap:0;padding:9px;background:white;box-shadow:0 15px 35px rgba(21,46,39,.17)}.mobile-menu nav a{padding:11px 13px;font-size:14px;font-weight:600}.mobile-menu nav a:hover{background:#f2f4ec}}
+@media(max-width:550px){.home-header{padding:0 17px;gap:8px}.home-header .brand b{width:36px;height:36px;font-size:23px}.home-header .brand strong{font-size:12px}.home-header .brand small{font-size:8px}.home-header .nav-cta{padding:11px 12px;gap:0;font-size:11px}.home-header .nav-cta span{display:none}.mobile-menu summary{font-size:0}.mobile-menu summary span{font-size:19px}.hero{height:calc(100svh - 78px)}}

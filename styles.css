@@ -325,3 +325,7 @@ footer{padding-top:41px}
  .review-card{min-height:0;padding:22px}
  .review-verified{margin-left:47px;width:100%}
 }
+
+/* Taller photos in the experience cards. */
+.tours .photo-card .card-photo{height:300px}
+@media(max-width:620px){.tours .photo-card .card-photo{height:255px}}

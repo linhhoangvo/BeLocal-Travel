@@ -471,3 +471,24 @@ footer{padding-top:41px}
 .about-next .button{border-radius:999px;padding:13px 22px;transition:transform .25s ease,background .25s ease,box-shadow .25s ease}
 .about-next .button:hover{transform:translateY(-2px);box-shadow:0 9px 20px rgba(52,61,52,.18)}
 @media(max-width:760px){.about-hero:after{bottom:-115px}.values-grid{border-radius:14px}.founder-grid>img{border-radius:14px}}
+
+/* Founder story layout */
+.about-hero-story{padding-bottom:86px}
+.about-story-who{padding-top:86px}
+.about-story-copy strong{color:#2b382f;font-weight:700}
+.team-founders{padding:86px 0 94px;background:#f0f2ec}
+.team-founders>.wrap>.eyebrow,.about-values-new>.wrap>.eyebrow,.about-belief>.eyebrow{color:#9b6c4c;margin-bottom:24px}
+.team-founder-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.team-founder{display:grid;grid-template-columns:145px 1fr;gap:24px;align-items:center;background:#fbfaf6;border-radius:18px;padding:18px;box-shadow:0 12px 32px rgba(49,63,51,.07)}
+.team-founder img{width:145px;height:190px;object-fit:cover;object-position:center top;border-radius:12px}
+.team-founder h2{font:400 36px/1.05 'Cormorant Garamond',Georgia,serif;color:#2b382f;margin:0 0 4px}
+.team-founder span{display:block;color:#9b6c4c;font:700 11px/1.5 Manrope,Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;margin-bottom:14px}
+.team-founder p{color:#617066;font:400 13px/1.65 Manrope,Arial,sans-serif;margin:0}
+.about-values-new{padding:78px 0 86px}
+.about-values-new .values-grid{grid-template-columns:repeat(4,1fr)}
+.about-belief{padding-top:86px;padding-bottom:94px;text-align:center}
+.about-belief blockquote{max-width:760px;margin:0 auto 18px;font:400 clamp(36px,4vw,57px)/1.05 'Cormorant Garamond',Georgia,serif;color:#2b382f;letter-spacing:-.025em}
+.about-belief>p{max-width:520px;margin:0 auto 26px;color:#617066;font:400 15px/1.7 Manrope,Arial,sans-serif}
+.about-belief .button{display:inline-block;border-radius:999px;padding:13px 22px}
+@media(max-width:780px){.team-founders{padding:63px 0}.team-founder-grid{grid-template-columns:1fr}.about-values-new .values-grid{grid-template-columns:1fr}.about-belief{padding:62px 0 70px}.team-founder{grid-template-columns:115px 1fr}.team-founder img{width:115px;height:160px}}
+@media(max-width:480px){.team-founder{grid-template-columns:1fr}.team-founder img{width:100%;height:270px}.team-founder h2{font-size:32px}}

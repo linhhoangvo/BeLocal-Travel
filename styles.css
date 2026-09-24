@@ -173,3 +173,7 @@ footer{background:var(--ivory)}
 /* Keep the homepage headline at a comfortable editorial scale. */
 .hero h1{font-size:clamp(46px,5vw,72px);line-height:1.02;max-width:790px}
 @media(max-width:620px){.hero h1{font-size:clamp(40px,9vw,52px);line-height:1.04}}
+
+/* Smaller tour card headlines. */
+.photo-card h3{font-size:clamp(24px,2.1vw,29px);line-height:1.12;min-height:0;margin:13px 0 10px}
+@media(max-width:620px){.photo-card h3{font-size:26px}}

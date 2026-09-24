@@ -177,3 +177,49 @@ footer{background:var(--ivory)}
 /* Smaller tour card headlines. */
 .photo-card h3{font-size:clamp(24px,2.1vw,29px);line-height:1.12;min-height:0;margin:13px 0 10px}
 @media(max-width:620px){.photo-card h3{font-size:26px}}
+
+/* A closer, steadier rhythm on the homepage. */
+.home-header{height:78px}
+.hero{height:min(570px,calc(100svh - 78px));min-height:460px}
+.hero-copy{padding-top:clamp(75px,11vh,105px)}
+.hero h1{margin:18px 0 18px}
+.hero p{margin-bottom:24px}
+.hero-foot{bottom:20px}
+.tours{padding-top:56px;padding-bottom:65px}
+.tours .section-head{margin-bottom:26px}
+.tours .section-head h2{margin-bottom:9px}
+.photo-card .card-photo{height:195px}
+.photo-card .label{padding:16px 20px 0}
+.photo-card>div:last-child{padding:0 20px 21px}
+.photo-card h3{margin:10px 0 8px}
+.photo-card p{min-height:0;margin-bottom:13px}
+.note{margin-top:14px}
+.guest-stories{padding:57px 0 62px}
+.review-heading{margin-bottom:18px}
+.review-overview{margin-bottom:17px;padding:18px 24px}
+.review-card{min-height:0;padding:23px}
+.review-card>p{margin:9px 0 16px}
+.about .wrap{padding-top:70px;padding-bottom:74px}
+.about h2{margin:18px 0}
+.destinations{padding-top:69px;padding-bottom:69px}
+.stamp{width:150px;height:150px;font-size:27px}
+.home-blog{padding:64px 0 69px}
+.home-blog>.wrap>p{margin-bottom:24px}
+.blog-stories img{height:225px}
+.all-stories{margin-top:22px}
+.home-contact{padding:59px 0}
+footer{padding-top:41px}
+.footer-main{padding-bottom:43px}
+@media(max-width:950px){.home-header{height:74px}}
+@media(max-width:620px){
+ .hero{height:min(600px,calc(100svh - 74px));min-height:450px}
+ .hero-copy{padding-top:88px}
+ .hero h1{margin:17px 0}
+ .tours{padding-top:46px;padding-bottom:54px}
+ .photo-card .card-photo{height:205px}
+ .guest-stories{padding:48px 0 54px}
+ .about .wrap{padding-top:59px;padding-bottom:62px}
+ .destinations{padding-top:57px;padding-bottom:57px}
+ .stamp{width:96px;height:96px;font-size:16px}
+ .home-blog,.home-contact{padding:53px 0}
+}

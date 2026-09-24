@@ -334,3 +334,8 @@ footer{padding-top:41px}
 #destinations.destination-showcase{padding-bottom:18px}
 #destinations+.home-blog{padding-top:20px}
 @media(max-width:620px){#destinations.destination-showcase{padding-bottom:14px}#destinations+.home-blog{padding-top:17px}}
+
+/* Bring guest reviews close to the journal link. */
+.home-blog{padding-bottom:20px}
+.home-blog+.guest-stories{padding-top:24px}
+@media(max-width:620px){.home-blog{padding-bottom:15px}.home-blog+.guest-stories{padding-top:20px}}

@@ -169,3 +169,7 @@ footer{background:var(--ivory)}
 .destination-feature>a{background:var(--ivory);color:var(--ink)}
 .contact-detail>div+div a{color:var(--moss)}
 @media(max-width:620px){.shade{background:linear-gradient(90deg,rgba(26,29,24,.78),rgba(26,29,24,.25)),linear-gradient(0deg,rgba(26,29,24,.42),transparent 54%)}}
+
+/* Keep the homepage headline at a comfortable editorial scale. */
+.hero h1{font-size:clamp(46px,5vw,72px);line-height:1.02;max-width:790px}
+@media(max-width:620px){.hero h1{font-size:clamp(40px,9vw,52px);line-height:1.04}}

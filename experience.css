@@ -116,3 +116,19 @@
 .village-page .detail-copy>p{margin-bottom:26px}
 .village-page .booking-panel{background:#fffdf8}
 @media(max-width:750px){.village-page .booking-panel{margin-top:22px}.village-page .detail-copy{padding-top:42px}}
+
+
+/* Related tours read as an editorial list, with every destination visible. */
+.more-tours{max-width:960px;margin-left:auto;margin-right:auto}
+.more-tours>div:last-child,.cocktails-page .more-tours>div:last-child{display:flex;flex-direction:column;gap:0;overflow:visible;padding:0;margin-top:25px}
+.more-tours .more-tour-card,.cocktails-page .more-tour-card{display:flex;align-items:center;gap:25px;width:100%;min-width:0;padding:18px 0;background:transparent;border-bottom:1px solid #cbd0c5;text-decoration:none}
+.more-tours .more-tour-card:first-child{border-top:1px solid #cbd0c5}
+.more-tours .more-tour-card:hover{background:transparent}
+.more-tours .more-tour-card img,.cocktails-page .more-tour-card img{flex:0 0 170px;width:170px;height:115px;object-fit:cover;display:block}
+.more-tour-copy{display:flex;flex-direction:column;align-items:flex-start;gap:9px;min-width:0}
+.more-tours .more-tour-card .more-tour-copy span{font:700 11px/1.3 'DM Sans',sans-serif;letter-spacing:.13em;color:#826449}
+.more-tours .more-tour-card strong,.cocktails-page .more-tour-card strong{font:500 clamp(19px,2.3vw,25px)/1.25 Fraunces,Georgia,serif;color:#243b3a}
+.more-tours .more-tour-card b,.cocktails-page .more-tour-card b{flex:0 0 auto;margin-left:auto;align-self:center;font:400 23px/1 'DM Sans',sans-serif;color:#ad7135;transition:transform .2s}
+.more-tours .more-tour-card:hover b{transform:translate(3px,-3px)}
+.more-tours .more-tour-card:focus-visible{outline:2px solid #243b3a;outline-offset:3px}
+@media(max-width:620px){.more-tours .more-tour-card,.cocktails-page .more-tour-card{gap:15px;padding:15px 0}.more-tours .more-tour-card img,.cocktails-page .more-tour-card img{flex-basis:105px;width:105px;height:90px}.more-tour-copy{gap:5px}.more-tours .more-tour-card strong,.cocktails-page .more-tour-card strong{font-size:18px}.more-tours .more-tour-card b,.cocktails-page .more-tour-card b{font-size:19px}}

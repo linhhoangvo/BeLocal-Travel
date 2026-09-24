@@ -131,7 +131,7 @@ if (!tour) {
   }
   if (key === "coffee") {
     const gallery = document.getElementById("cocktail-gallery");
-    gallery.innerHTML = "<img src=\"coffee-tour-7.jpg\" alt=\"A local enjoying coffee outside a Hoi An caf\u00e9\" loading=\"lazy\"><img src=\"coffee-tour-4.jpg\" alt=\"B\u00e1nh m\u00ec served during the Hoi An morning food tour\" loading=\"lazy\"><img src=\"coffee-tour-3.jpg\" alt=\"Vietnamese coffees enjoyed together at a Hoi An caf\u00e9\" loading=\"lazy\"><img src=\"coffee-tour-6.jpg\" alt=\"Vietnamese drip coffee in a local caf\u00e9\" loading=\"lazy\"><img src=\"coffee-tour-1.jpg\" alt=\"A cup of Vietnamese coffee on a ceramic plate\" loading=\"lazy\"><img src=\"coffee-tour-5.jpg\" alt=\"Coffee and flowers at a Hoi An caf\u00e9\" loading=\"lazy\">";
+    gallery.innerHTML = "<img src=\"coffee-tour-7.jpg\" alt=\"Bánh mì served during the morning food tour\" loading=\"lazy\"><img src=\"coffee-tour-3.jpg\" alt=\"A guest enjoying coffee in Hoi An\" loading=\"lazy\"><img src=\"coffee-tour-6.jpg\" alt=\"Two coffees served at a Hoi An café\" loading=\"lazy\"><img src=\"coffee-tour-1.jpg\" alt=\"A cup of Vietnamese coffee\" loading=\"lazy\"><img src=\"coffee-tour-5.jpg\" alt=\"Coffee and flowers at a Hoi An café\" loading=\"lazy\"><img src=\"coffee-tour-2.jpg\" alt=\"A local host in Hoi An\" loading=\"lazy\">";
     gallery.hidden = false;
     const caption = document.getElementById("gallery-caption");
     caption.textContent = "Scenes from the Hoi An morning coffee and food tour.";

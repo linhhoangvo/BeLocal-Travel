@@ -33,14 +33,15 @@ const tours = {
     direct: true
   },
   calligraphy: {
-    title: "Calligraphy & Tea",
+    title: "Hoi An: Vietnamese Calligraphy Workshop and Tea Tasting",
     category: "ART & TRADITION",
-    intro: "Slow down for an introduction to calligraphy and tea in Hoi An.",
-    description: "Make space for a quieter cultural experience. Discover the care and attention behind calligraphy while sharing a cup of tea.",
-    highlights: ["Try a traditional art", "Enjoy tea in a relaxed setting", "Take home a deeper connection to local craft"],
-    image: "image(20260923-103723).png",
-    alt: "Guests showing their calligraphy work with a local teacher",
-    bookingUrl: operatorUrl
+    intro: "Learn Vietnamese calligraphy with a local instructor, create an artwork to take home, then taste three Vietnamese teas.",
+    description: "Spend a creative afternoon learning brush strokes and meaningful words, followed by a guided tasting of three Vietnamese teas.",
+    highlights: [],
+    image: "https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=60%2Cwidth=395%2Cheight=400%2Cdpr=2/tour_img/6bf63d6c5f28c7e5661711894f6b8227aba5ea64af5ca32ed9cdbf6e59dfe358.jpg",
+    alt: "Vietnamese calligraphy workshop in Hoi An",
+    bookingUrl: "https://www.getyourguide.com/hoi-an-l831/hoi-an-vietnamese-calligraphy-workshop-and-tea-ceremony-t1412646/",
+    direct: true
   },
   tailor: {
     title: "Hoi An Tailor Experience",
@@ -121,7 +122,10 @@ if (!tour) {
   if (key === "calligraphy") {
     document.body.classList.add("cocktails-page", "village-page", "calligraphy-page");
     const gallery = document.getElementById("cocktail-gallery");
-    gallery.innerHTML = '<img src="image(20260923-103745).png" alt="Guest practicing calligraphy with a teacher" loading="lazy"><img src="743811501_18001909043957289_4521587935079853568_n.jpg" alt="Tea being poured into cups" loading="lazy"><img src="image(20260923-103758).png" alt="Calligraphy lesson in Hoi An" loading="lazy"><img src="611383074_17978714378957289_7852468900373837753_n.jpg" alt="Guest arranging tea at a table" loading="lazy">';
+    gallery.innerHTML = "<img src=\"https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/f8ef26293b31f0f29663c48b6d3b3c17c420979eb8b5097d863429465c7f2327.jpg\" alt=\"Practicing Vietnamese calligraphy\" loading=\"lazy\"><img src=\"https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/2cbf9abef3a39d78b3d3c3ff857c789cbdff809534d8bcf59e349ed8f67f9cfa.jpg\" alt=\"Brushwork at the calligraphy workshop\" loading=\"lazy\"><img src=\"https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/509ef6b5aea87054a568ee6a6550139eecb362b5acb1f7c98535973a69427ecb.jpg\" alt=\"Tea and cultural experience\" loading=\"lazy\"><img src=\"https://cdn.getyourguide.com/image/format=auto%2Cfit=crop%2Cgravity=auto%2Cquality=65%2Cwidth=600%2Cheight=600%2Cdpr=2/tour_img/c00492591a40e672f2f9cc877f4bd9540481cbf6eacb5f37b14835af28e9d075.jpeg\" alt=\"Vietnamese tea tasting\" loading=\"lazy\">";
+    const caption = document.getElementById("gallery-caption");
+    caption.textContent = "Photos from the calligraphy and tea workshop.";
+    caption.hidden = false;
     gallery.hidden = false;
   }
   if (key === "coffee" || key === "tailor") {
@@ -144,11 +148,11 @@ if (!tour) {
         before: "The public booking page for this individual experience is not yet available. Contact the team for the route, duration, meeting point and price."
       },
       calligraphy: {
-        highlights: ["Try your hand at calligraphy", "Spend time with a local teacher", "Enjoy tea in a relaxed setting"],
-        description: ["Take a quieter pause in Hoi An and get an introduction to the care and attention behind calligraphy. Watch, try the art yourself and share tea as part of the experience.", "Session length, the exact meeting point and any materials you can take home will be confirmed before booking."],
-        itinerary: [["Meet your teacher", "Begin with an introduction to calligraphy and the tools used."], ["Practice and pause for tea", "Try your hand at the art and enjoy time around the tea table. The exact order may vary."]],
-        included: ["Ask us to confirm materials, tea and any take-home work before reserving."],
-        before: "The public booking page for this individual experience is not yet available. Contact the team to confirm dates, duration and price."
+        highlights: ["Learn brush techniques from a local calligraphy instructor", "Create a personalised artwork to take home", "Taste three Vietnamese teas and learn about their origins"],
+        description: ["Begin with an introduction to Vietnamese calligraphy and the wishes it can express, from peace and happiness to love and gratitude. Your instructor demonstrates how to hold the brush, control the ink and form basic strokes.", "Choose a word that means something to you, then practice with individual guidance before making your own artwork. No artistic experience is needed.", "After the creative session, settle in for a guided tasting of three Vietnamese teas. Learn about their origins, flavours and preparation, and enjoy the connection between tea and a slower, more attentive moment."],
+        itinerary: [["Meet your instructor", "Learn about the tools and meanings behind Vietnamese calligraphy."], ["Practice the brush strokes", "Work with ink and paper, then create an artwork to take home."], ["Taste Vietnamese tea", "Enjoy a guided tasting of three teas and hear about their origins."]],
+        included: ["Local calligraphy instructor and English-speaking host", "Brush, ink and paper during the workshop", "One personalised calligraphy artwork to take home", "Three-tea tasting and drinking water"],
+        before: "Meet outside RAWCOCO COFFEE; please wait near the entrance rather than going inside. The workshop lasts around 3 hours 30 minutes and is limited to 6 guests. Hotel transfers, extra food or drinks, personal expenses and tips are not included."
       },
       tailor: {
         highlights: ["Meet the people behind Hoi An’s tailoring tradition", "See the care involved in a fitting", "Learn more about local craftsmanship"],
@@ -160,7 +164,7 @@ if (!tour) {
     }[key];
     const facts = document.getElementById("cocktail-facts");
     if (key !== "cocktails") {
-      facts.innerHTML = '<div><span>Location</span><strong>Hoi An</strong></div><div><span>Schedule</span><strong>Confirm before booking</strong></div>';
+      facts.innerHTML = key === "calligraphy" ? '<div><span>Duration</span><strong>3 hours 30 minutes</strong></div><div><span>Group</span><strong>Up to 6 guests</strong></div><div><span>Host</span><strong>English speaking</strong></div><div><span>Meeting point</span><strong>RAWCOCO COFFEE</strong></div>' : '<div><span>Location</span><strong>Hoi An</strong></div><div><span>Schedule</span><strong>Confirm before booking</strong></div>';
       facts.hidden = false;
     }
     const extra = document.getElementById("cocktail-extra");
@@ -171,10 +175,15 @@ if (!tour) {
       '<section class="village-section"><h3>' + (key === "cocktails" ? "Included" : "Inclusions") + '</h3>' + list(details.included) + '</section>' +
       '<section class="village-section"><h3>Before you go</h3><p>' + details.before + '</p></section>';
     extra.hidden = false;
+    if (key === "calligraphy") {
+      extra.insertAdjacentHTML("beforeend", '<section class="village-section"><h3>Not included</h3>' + list(["Hotel pickup and drop-off", "Additional food and drinks", "Personal expenses and tips"]) + '</section><section class="village-section"><h3>Meeting point</h3><p>Meet your guide outside RAWCOCO COFFEE. Please wait near the entrance and do not go inside the café. <a href="https://maps.google.com/?q=@15.8783726,108.3272408" target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a></p></section><section class="village-section"><h3>Cancellation</h3><p>Free cancellation up to 24 hours in advance. The booking page also offers reserve now, pay later; check the terms for your selected date.</p></section>');
+      document.getElementById("tour-highlights").hidden = true;
+      document.getElementById("tour-highlights").previousElementSibling.hidden = true;
+    }
     document.querySelector(".detail-copy h2").textContent = "About this tour";
     document.querySelector(".booking-overline").textContent = "HOI AN · " + tour.category;
-    document.getElementById("booking-title").textContent = key === "cocktails" ? "Check availability" : "Explore available tours";
-    if (key === "cocktails") document.getElementById("booking-description").textContent = "Select your date and guests to see current times and prices.";
+    document.getElementById("booking-title").textContent = key === "cocktails" || key === "calligraphy" ? "Check availability" : "Explore available tours";
+    if (key === "cocktails" || key === "calligraphy") document.getElementById("booking-description").textContent = "Select your date and guests to see current times and prices.";
   }
   document.title = tour.title + " — Be Local Travel";
   document.querySelector('meta[name="description"]').content = tour.intro;
@@ -224,4 +233,5 @@ if (!tour) {
     document.getElementById("more-links").append(a);
   }
 }
-document.getElementById("year").textContent = new Date().getFullYear();
+const yearEl = document.getElementById("year");
+if (yearEl) yearEl.textContent = new Date().getFullYear();

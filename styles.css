@@ -125,3 +125,47 @@ h1,h2,h3,.card h3,.blog-stories h3,.values-grid h3,.founder-copy h3,.destination
 .card p{font-size:14px;line-height:1.6}
 .button,.nav-cta,.back-link,.card a,.blog-stories strong{font-family:Manrope,Arial,sans-serif;font-size:11px;letter-spacing:.07em;font-weight:600}
 @media(max-width:750px){.hero h1{font-size:clamp(52px,12vw,74px)}.about-hero h1,.subpage-intro h1{font-size:clamp(38px,10vw,52px)}.tours .section-head h2{font-size:42px}.mobile-menu nav a{font-size:18px}}
+
+/* MO Bedding palette: ivory, paper, ink, sage, moss, clay. */
+:root{--paper:#fbfaf6;--ivory:#f3f0e8;--ink:#21251f;--sage:#89927e;--moss:#465044;--clay:#a46f53;--muted:#5b5f57;--line:rgba(33,37,31,.18)}
+body{background:var(--paper);color:var(--ink)}
+a:focus-visible{outline-color:var(--clay)}
+.header,.home-header{background:var(--paper)}
+.home-header .brand b{background:var(--moss);color:var(--ivory)}
+.home-header>nav a:hover,.home-header>nav a.current{color:var(--clay)}
+.home-header .nav-cta,.home-contact .contact-inner>a,.about-next .button,.review-overview a{background:var(--moss);color:white}
+.home-header .nav-cta:hover,.home-contact .contact-inner>a:hover,.about-next .button:hover,.review-overview a:hover{background:#343d34}
+.mobile-menu nav{background:var(--paper)}
+.mobile-menu nav a:hover{background:var(--ivory)}
+.shade{background:linear-gradient(90deg,rgba(26,29,24,.72),rgba(26,29,24,.30) 53%,transparent 88%),linear-gradient(0deg,rgba(26,29,24,.32),transparent 34%)}
+.hero h1 em{color:#ead1b5}
+.hero p{color:#fff}
+.hero .button{background:var(--paper);color:var(--ink)}
+.hero .button:hover{background:var(--ivory)}
+.section-head h2 em,.destinations h2 em,.home-blog h2 em,.home-contact h2 em,.blog-page h1 em,.about-hero h1 em,.subpage-intro h1 em{color:var(--clay)}
+.tours,.destinations,.blog-page,.subpage-intro,.contact-detail,.subpage-close{background:var(--paper)}
+.photo-card,.review-card,.review-overview{background:#fff}
+.photo-card .label,.blog-stories span,.blog-article-copy span,.founder-role{color:var(--clay)}
+.about,.about-values{background:var(--moss);color:#fff}
+.about h2 em{color:#ead1b5}
+.about p,.about-values p{color:#e9e9df}
+.about a{border-color:#d7b898}
+.guest-stories,.home-contact,.about-hero,.team-profile,.contact-detail>div+div{background:var(--ivory)}
+.guest-stories{background-image:repeating-radial-gradient(ellipse at 12% 15%,transparent 0 23px,rgba(70,80,68,.045) 24px 25px,transparent 26px 40px)}
+.review-overview strong span,.review-card .review-stars,.review-card-top span{color:var(--clay)}
+.review-card-top small,.review-overview small,.review-source,.review-person small{color:var(--muted)}
+.review-overview a,.review-card-foot a{color:var(--moss)}
+.review-overview a{color:#fff}
+.review-avatar{background:#e8eae2;color:var(--moss)}
+.review-verified{color:var(--moss)}
+.review-card>p{color:var(--ink)}
+.home-blog,.founder-profile{background:var(--paper)}
+.blog-index a{background:var(--ivory)}
+.blog-index a:hover{background:#e6e0d5}
+.about-story-copy p,.founder-copy p,.blog-article-copy p,.blog-lead,.blog-stories p,.home-blog>.wrap>p,.home-contact p,.subpage-intro p,.contact-detail p,.section-head p,.tours .section-head p,.destinations p{color:var(--muted)}
+.stamp{color:var(--clay);border-color:var(--clay)}
+footer{background:var(--ivory)}
+.footer-end{border-color:var(--line);color:var(--muted)}
+.destination-feature>a{background:var(--ivory);color:var(--ink)}
+.contact-detail>div+div a{color:var(--moss)}
+@media(max-width:620px){.shade{background:linear-gradient(90deg,rgba(26,29,24,.78),rgba(26,29,24,.25)),linear-gradient(0deg,rgba(26,29,24,.42),transparent 54%)}}

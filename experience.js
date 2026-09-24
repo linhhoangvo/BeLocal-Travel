@@ -135,7 +135,10 @@ if (!tour) {
     title.textContent = other.title;
     const arrow = document.createElement("b");
     arrow.textContent = "↗";
-    a.append(img, label, title, arrow);
+    const copy = document.createElement("span");
+    copy.className = "more-tour-copy";
+    copy.append(label, title);
+    a.append(img, copy, arrow);
     document.getElementById("more-links").append(a);
   }
 }

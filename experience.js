@@ -173,7 +173,7 @@ if (!tour) {
     extra.hidden = false;
     document.querySelector(".detail-copy h2").textContent = "About this tour";
     document.querySelector(".booking-overline").textContent = "HOI AN · " + tour.category;
-    document.getElementById("booking-title").textContent = key === "cocktails" ? "Check availability" : "Ask about this experience";
+    document.getElementById("booking-title").textContent = key === "cocktails" ? "Check availability" : "Explore available tours";
     if (key === "cocktails") document.getElementById("booking-description").textContent = "Select your date and guests to see current times and prices.";
   }
   document.title = tour.title + " — Be Local Travel";

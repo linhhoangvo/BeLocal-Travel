@@ -104,9 +104,9 @@ if (!tour) {
       <section class="village-section"><h3>Good to know</h3><p>Wear comfortable clothes for cycling and bring sun protection. Check your meeting point and any additional requirements in your booking confirmation.</p></section>`;
     extra.hidden = false;
     document.querySelector(".detail-copy h2").textContent = "About this tour";
-    document.querySelector(".booking-overline").textContent = "BOOK THIS TOUR";
-    document.getElementById("booking-title").textContent = "Check availability";
-    document.getElementById("booking-description").textContent = "Choose your date and guests to see current times and prices.";
+    document.querySelector(".booking-overline").textContent = "TRA NHIEU · HOI AN";
+    document.getElementById("booking-title").textContent = "Find your place on the tour";
+    document.getElementById("booking-description").textContent = "See available dates and the current price for your group.";
   }
   if (key === "calligraphy") {
     document.body.classList.add("calligraphy-page");
@@ -130,12 +130,13 @@ if (!tour) {
   }
   const booking = document.getElementById("booking-link");
   booking.href = tour.bookingUrl;
+  if (key === "tra-nhieu") booking.firstChild.textContent = "See dates & prices ";
   if (!tour.direct) {
     booking.textContent = "Browse available tours ↗";
     document.getElementById("booking-description").textContent = "This experience does not yet have its own public checkout page.";
     document.getElementById("booking-note").textContent = "The button opens our tour collection. Dates and availability for this experience are not yet shown here.";
   } else {
-    document.getElementById("booking-note").textContent = key === "cocktails" ? "Booking and payment are handled by GetYourGuide." : "Checkout opens on GetYourGuide in a new tab.";
+    document.getElementById("booking-note").textContent = key === "cocktails" ? "Booking and payment are handled by GetYourGuide." : key === "tra-nhieu" ? "Booking opens on GetYourGuide." : "Checkout opens on GetYourGuide in a new tab.";
   }
   for (const [id, other] of Object.entries(tours)) {
     if (id === key) continue;

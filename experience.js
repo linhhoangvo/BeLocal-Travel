@@ -60,13 +60,13 @@ if (!tour) {
   document.title = "Experience not found — Be Local Travel";
 } else {
   if (key === "cocktails") {
-    document.body.classList.add("cocktails-page");
-    document.getElementById("cocktail-facts").hidden = false;
-    document.getElementById("cocktail-extra").hidden = false;
+    document.body.classList.add("cocktails-page", "village-page");
     const gallery = document.getElementById("cocktail-gallery");
     gallery.innerHTML = '<img src="cocktail%204.jpg" alt="Guests enjoying drinks in Hoi An" loading="lazy"><img src="cocktail%2015.jpg" alt="Bartender preparing a cocktail" loading="lazy"><img src="cocktail%208.jpg" alt="Cocktails at a Hoi An bar" loading="lazy"><img src="cocktail%2022.jpeg" alt="Cocktails served at an evening bar" loading="lazy">';
     gallery.hidden = false;
-    document.getElementById("gallery-caption").hidden = true;
+    const facts = document.getElementById("cocktail-facts");
+    facts.innerHTML = '<div><span>Duration</span><strong>4 hours</strong></div><div><span>Group</span><strong>Up to 8 guests</strong></div><div><span>Guide</span><strong>English speaking</strong></div><div><span>Meeting point</span><strong>26 Phan Boi Chau</strong></div>';
+    facts.hidden = false;
     document.querySelector(".detail-copy h2").textContent = "About this tour";
     document.querySelector(".booking-overline").textContent = "BOOK THIS TOUR";
     document.getElementById("booking-title").textContent = "Check availability";
@@ -119,10 +119,62 @@ if (!tour) {
     document.getElementById("booking-description").textContent = "See available dates and the current price for your group.";
   }
   if (key === "calligraphy") {
-    document.body.classList.add("calligraphy-page");
+    document.body.classList.add("cocktails-page", "village-page", "calligraphy-page");
     const gallery = document.getElementById("cocktail-gallery");
     gallery.innerHTML = '<img src="image(20260923-103745).png" alt="Guest practicing calligraphy with a teacher" loading="lazy"><img src="743811501_18001909043957289_4521587935079853568_n.jpg" alt="Tea being poured into cups" loading="lazy"><img src="image(20260923-103758).png" alt="Calligraphy lesson in Hoi An" loading="lazy"><img src="611383074_17978714378957289_7852468900373837753_n.jpg" alt="Guest arranging tea at a table" loading="lazy">';
     gallery.hidden = false;
+  }
+  if (key === "coffee" || key === "tailor") {
+    document.body.classList.add("cocktails-page", "village-page");
+  }
+  if (key !== "tra-nhieu") {
+    const details = {
+      cocktails: {
+        highlights: ["Discover tucked-away cocktail bars with a local guide", "Taste local food as you walk through Hoi An Old Town", "Finish the evening with a drink at a local bar"],
+        description: ["Meet your guide at 26 Phan Boi Chau and set out on foot through Hoi An Old Town. Between its familiar streets are small bars, food stops and places worth slowing down for.", "The evening includes two cocktail stops, a street food stop, dessert at a café and a final local bar. Your guide will share stories along the way and bring you back to the meeting point. The venues and menu can change."],
+        itinerary: [["Meet in the Old Town", "Find your guide at 26 Phan Boi Chau before setting out on foot."], ["Cocktails and local food", "Visit two cocktail spots and a street food stop with your guide."], ["Dessert and one last bar", "Pause for dessert at a café, then finish at a local bar before returning to the meeting point."]],
+        included: ["English-speaking local guide", "Food and drinks served as part of the tour", "Vegetarian food and non-alcoholic alternatives available"],
+        before: "For adults aged 18 and over. Extra orders, personal expenses and tips are not included. Confirm the menu, stops and departure time when booking."
+      },
+      coffee: {
+        highlights: ["Explore quieter corners of Hoi An", "Get to know the town through its coffee culture", "Take time to taste and talk along the way"],
+        description: ["Step away from Hoi An’s busiest streets and discover the cafés and everyday coffee rituals that shape local life. This is an invitation to slow down, enjoy a cup and notice the places around you.", "Specific cafés, drinks, duration and meeting details will be confirmed when this experience becomes available to book."],
+        itinerary: [["Set out in Hoi An", "Begin with a local introduction to the town and its coffee culture."], ["Spend time over coffee", "Visit café spaces and enjoy a slower look at the people and places behind each cup. The exact route is confirmed before booking."]],
+        included: ["Ask us for the current inclusions and drink options before reserving."],
+        before: "The public booking page for this individual experience is not yet available. Contact the team for the route, duration, meeting point and price."
+      },
+      calligraphy: {
+        highlights: ["Try your hand at calligraphy", "Spend time with a local teacher", "Enjoy tea in a relaxed setting"],
+        description: ["Take a quieter pause in Hoi An and get an introduction to the care and attention behind calligraphy. Watch, try the art yourself and share tea as part of the experience.", "Session length, the exact meeting point and any materials you can take home will be confirmed before booking."],
+        itinerary: [["Meet your teacher", "Begin with an introduction to calligraphy and the tools used."], ["Practice and pause for tea", "Try your hand at the art and enjoy time around the tea table. The exact order may vary."]],
+        included: ["Ask us to confirm materials, tea and any take-home work before reserving."],
+        before: "The public booking page for this individual experience is not yet available. Contact the team to confirm dates, duration and price."
+      },
+      tailor: {
+        highlights: ["Meet the people behind Hoi An’s tailoring tradition", "See the care involved in a fitting", "Learn more about local craftsmanship"],
+        description: ["Hoi An is known for its tailoring. This experience brings you closer to the people and craft behind a garment, from the conversation about what you want to the details that make a fitting personal.", "The visit does not currently have a separate public booking page. The specific workshop, duration and whether any garment or fitting is included must be confirmed before reserving."],
+        itinerary: [["Discover the workshop", "Meet local makers and learn about their work."], ["Look closer at the craft", "Explore the fitting and making process. The exact activities depend on the confirmed visit."]],
+        included: ["Ask us to confirm workshop access, materials and any garment costs before reserving."],
+        before: "A made-to-measure garment is not included unless explicitly confirmed. Contact the team for dates, duration, price and meeting details."
+      }
+    }[key];
+    const facts = document.getElementById("cocktail-facts");
+    if (key !== "cocktails") {
+      facts.innerHTML = '<div><span>Location</span><strong>Hoi An</strong></div><div><span>Schedule</span><strong>Confirm before booking</strong></div>';
+      facts.hidden = false;
+    }
+    const extra = document.getElementById("cocktail-extra");
+    const list = items => '<ul class="village-highlights">' + items.map(item => '<li>' + item + '</li>').join('') + '</ul>';
+    extra.innerHTML = '<section class="village-section"><h3>Highlights</h3>' + list(details.highlights) + '</section>' +
+      '<section class="village-section"><h3>Full description</h3>' + details.description.map(paragraph => '<p>' + paragraph + '</p>').join('') + '</section>' +
+      '<section class="village-section"><h3>How the experience unfolds</h3><ol class="village-itinerary">' + details.itinerary.map(([title, copy]) => '<li><strong>' + title + '</strong><p>' + copy + '</p></li>').join('') + '</ol></section>' +
+      '<section class="village-section"><h3>' + (key === "cocktails" ? "Included" : "Inclusions") + '</h3>' + list(details.included) + '</section>' +
+      '<section class="village-section"><h3>Before you go</h3><p>' + details.before + '</p></section>';
+    extra.hidden = false;
+    document.querySelector(".detail-copy h2").textContent = "About this tour";
+    document.querySelector(".booking-overline").textContent = "HOI AN · " + tour.category;
+    document.getElementById("booking-title").textContent = key === "cocktails" ? "Check availability" : "Ask about this experience";
+    if (key === "cocktails") document.getElementById("booking-description").textContent = "Select your date and guests to see current times and prices.";
   }
   document.title = tour.title + " — Be Local Travel";
   document.querySelector('meta[name="description"]').content = tour.intro;

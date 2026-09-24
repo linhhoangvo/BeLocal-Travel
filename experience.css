@@ -185,3 +185,10 @@
 .village-page .booking-button:hover{background:#356252}
 .village-page .booking-note{margin:14px 0 0!important;font-size:12px!important;color:#69786d!important}
 @media(max-width:750px){.village-page .booking-panel{padding:28px}}
+
+.village-page .tour-rating{font:600 13px/1.5 'DM Sans',sans-serif;color:#526b56;margin:0 0 12px}
+.village-page .detail-head h1{margin-bottom:9px}
+.village-page .detail-head p#tour-intro{max-width:780px}
+.village-page .cocktail-facts{gap:12px 23px}
+.village-page .cocktail-facts div{gap:5px}
+@media(max-width:620px){.village-page .cocktail-facts{grid-template-columns:1fr 1fr;gap:16px}}

@@ -359,3 +359,6 @@ footer{padding-top:41px}
 .tours:has(+ #destinations){padding-bottom:18px}
 .tours + #destinations.destination-showcase{padding-top:20px}
 @media(max-width:620px){.tours:has(+ #destinations){padding-bottom:14px}.tours + #destinations.destination-showcase{padding-top:16px}}
+
+/* Balance eight destinations over two rows on wide screens. */
+@media(min-width:1200px){.destination-grid{grid-template-columns:repeat(5,minmax(0,1fr))}}

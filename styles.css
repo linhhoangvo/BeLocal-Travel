@@ -610,20 +610,3 @@ body.founder-dialog-open{overflow:hidden}
 .about-belief h2{max-width:700px;margin:0 auto 10px;font:400 clamp(34px,3.5vw,48px)/1.12 'Cormorant Garamond',Georgia,serif;color:#2b382f;letter-spacing:-.02em}
 .about-belief>p{max-width:570px;margin:0 auto 22px}
 @media(max-width:780px){.about-belief{padding-top:48px;padding-bottom:56px}}
-
-/* Calm, compact site footer */
-.site-footer{background:#29352e;border-top:1px solid #566257}
-.site-footer .footer-content{grid-template-columns:minmax(240px,30%) minmax(0,1fr);min-height:0;max-width:1600px;margin:auto;align-items:start;padding:43px clamp(28px,5vw,80px) 38px;gap:clamp(32px,4vw,70px)}
-.site-footer .footer-photo{background:none;padding:0;gap:12px;justify-content:flex-start;min-height:0}
-.site-footer .footer-photo:before{display:none}
-.site-footer .footer-wordmark{font-size:clamp(34px,3vw,44px);line-height:.94}
-.site-footer .footer-wordmark small{margin-top:8px;font-size:10px}
-.site-footer .footer-photo p{font-size:20px;line-height:1.25;margin:0;color:#d7d7c8}
-.site-footer .footer-links{padding:2px 0 0;gap:clamp(20px,3vw,50px);align-content:start}
-.site-footer .footer-links>div{gap:8px}
-.site-footer .footer-links h2{color:#e3c6a9;margin-bottom:8px}
-.site-footer .footer-links a{color:#ecece4;transition:color .2s}
-.site-footer .footer-links a:hover{color:#edc8a5}
-.site-footer .footer-bottom{max-width:1600px;margin:auto;padding:14px clamp(28px,5vw,80px)}
-@media(max-width:900px){.site-footer .footer-content{grid-template-columns:1fr;padding:40px 7vw;gap:32px}.site-footer .footer-photo{min-height:0;padding:0;background:none}.site-footer .footer-links{padding:0}}
-@media(max-width:550px){.site-footer .footer-content{padding:36px 7vw}.site-footer .footer-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 20px}.site-footer .footer-links>div:last-child{grid-column:1/-1}.site-footer .footer-bottom{padding:14px 7vw}}

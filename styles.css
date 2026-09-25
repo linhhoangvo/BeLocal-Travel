@@ -618,3 +618,7 @@ body.founder-dialog-open{overflow:hidden}
 .site-footer .footer-social-icon svg{width:19px;height:19px}
 
 .site-footer .footer-social-icon--pending{cursor:default;opacity:.75}
+
+/* Two concise footer navigation groups */
+.site-footer .footer-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(20px,4vw,70px)}
+@media(max-width:550px){.site-footer .footer-links{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.site-footer .footer-links>div:last-child{grid-column:auto}}

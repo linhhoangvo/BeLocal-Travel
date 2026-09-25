@@ -523,3 +523,7 @@ footer{padding-top:41px}
 .team-founder .team-photo img{position:absolute;display:block;left:-100%;top:0;width:200%;height:100%;max-width:none;object-fit:cover;object-position:center center;border-radius:0}
 @media(max-width:780px){.team-photo{width:115px;height:160px}}
 @media(max-width:480px){.team-photo{width:100%;height:270px}.team-founder .team-photo img{left:-75%;width:175%}}
+
+/* Linh's supplied photo */
+.team-founder .team-photo--linh img{left:0;width:100%;object-fit:cover;object-position:39% 58%}
+@media(max-width:480px){.team-founder .team-photo--linh img{left:0;width:100%;object-position:39% 57%}}

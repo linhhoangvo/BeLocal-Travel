@@ -610,3 +610,9 @@ body.founder-dialog-open{overflow:hidden}
 .about-belief h2{max-width:700px;margin:0 auto 10px;font:400 clamp(34px,3.5vw,48px)/1.12 'Cormorant Garamond',Georgia,serif;color:#2b382f;letter-spacing:-.02em}
 .about-belief>p{max-width:570px;margin:0 auto 22px}
 @media(max-width:780px){.about-belief{padding-top:48px;padding-bottom:56px}}
+
+/* Social shortcuts in the photo footer */
+.site-footer .footer-socials{display:flex;align-items:center;gap:10px;margin-top:4px}
+.site-footer .footer-social-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#f7f5ee;color:#253129;text-decoration:none;transition:transform .2s,background-color .2s}
+.site-footer .footer-social-icon:hover,.site-footer .footer-social-icon:focus-visible{transform:translateY(-2px);background:#dfc9ac}
+.site-footer .footer-social-icon svg{width:19px;height:19px}

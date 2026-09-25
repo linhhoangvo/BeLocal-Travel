@@ -504,3 +504,9 @@ footer{padding-top:41px}
 .about-page .about-hero-story>.wrap>p{font-size:15px;line-height:1.55;max-width:530px;margin-bottom:0}
 .about-page .about-hero-story:after{bottom:-120px;height:150px}
 @media(max-width:760px){.about-page .about-hero-story{padding:18px 0 38px}.about-page .about-hero-story .eyebrow{margin-top:25px}.about-page .about-hero-story h1{font-size:clamp(39px,9vw,50px)}.about-page .about-hero-story>.wrap>p{font-size:14px}}
+
+/* About community image */
+.about-community-photo{margin:0 auto;padding:0 0 70px}
+.about-community-photo img{display:block;width:100%;height:clamp(300px,38vw,510px);object-fit:cover;object-position:center 63%;border-radius:16px}
+.about-community-photo figcaption{margin-top:10px;color:#6b766e;font:500 12px/1.5 Manrope,Arial,sans-serif}
+@media(max-width:760px){.about-community-photo{padding-bottom:48px}.about-community-photo img{height:clamp(260px,75vw,400px);object-position:center 70%;border-radius:12px}}

@@ -559,3 +559,18 @@ body.founder-dialog-open{overflow:hidden}
 /* Compact About hero after removing pre-title links */
 .about-page .about-hero-story{padding-top:42px}
 @media(max-width:760px){.about-page .about-hero-story{padding-top:34px}}
+
+/* Softer, more compact values section */
+.about-page .about-values-new{padding:62px 0 68px;background:#f6f7f2}
+.about-page .values-intro{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:27px}
+.about-page .values-intro .eyebrow{margin:0 0 12px}
+.about-page .values-intro h2{max-width:650px;margin:0;color:#2b382f;font:400 clamp(32px,3.4vw,48px)/1.07 'Cormorant Garamond',Georgia,serif;letter-spacing:-.03em}
+.about-page .values-intro h2 em{color:#a77355;font-weight:400}
+.about-page .values-intro>p{max-width:300px;margin:0 0 3px;color:#637064;font:400 13px/1.65 Manrope,Arial,sans-serif}
+.about-page .about-values-new .values-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0;border:0;border-radius:0;background:transparent;box-shadow:none;overflow:visible}
+.about-page .about-values-new .values-grid>div{position:relative;min-height:175px;padding:27px 24px 23px;border:1px solid #e7e9e1;border-radius:13px;background:#fff;box-shadow:0 6px 20px rgba(53,70,57,.035);transition:transform .22s ease,box-shadow .22s ease}
+.about-page .about-values-new .values-grid>div:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(53,70,57,.09)}
+.about-page .about-values-new .values-grid h3{margin-bottom:12px;color:#304037;font:400 27px/1.05 'Cormorant Garamond',Georgia,serif}
+.about-page .about-values-new .values-grid p{color:#5c6a60;font:400 13px/1.6 Manrope,Arial,sans-serif}
+@media(max-width:950px){.about-page .about-values-new .values-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-page .about-values-new .values-grid>div{min-height:145px}}
+@media(max-width:600px){.about-page .about-values-new{padding:48px 0 52px}.about-page .values-intro{display:block;margin-bottom:24px}.about-page .values-intro>p{margin-top:12px}.about-page .about-values-new .values-grid{grid-template-columns:1fr;gap:10px}.about-page .about-values-new .values-grid>div{min-height:0;padding:20px 21px}.about-page .about-values-new .values-grid h3{font-size:25px}}

@@ -610,15 +610,3 @@ body.founder-dialog-open{overflow:hidden}
 .about-belief h2{max-width:700px;margin:0 auto 10px;font:400 clamp(34px,3.5vw,48px)/1.12 'Cormorant Garamond',Georgia,serif;color:#2b382f;letter-spacing:-.02em}
 .about-belief>p{max-width:570px;margin:0 auto 22px}
 @media(max-width:780px){.about-belief{padding-top:48px;padding-bottom:56px}}
-
-/* About invitation */
-.about-belief{padding-top:32px;padding-bottom:68px;text-align:left}
-.about-invitation{display:flex;align-items:end;justify-content:space-between;gap:48px;background:#35453c;color:#f9f6ef;border-radius:18px;padding:52px 58px}
-.about-invitation-copy{max-width:650px}
-.about-invitation .eyebrow{color:#dfc9ac;margin:0 0 15px}
-.about-invitation h2{max-width:none;margin:0 0 12px;font:400 clamp(38px,3.6vw,53px)/1.05 'Cormorant Garamond',Georgia,serif;color:#fffaf1;letter-spacing:-.02em}
-.about-invitation h2 em{color:#d9b99e;font-weight:400}
-.about-invitation p{max-width:500px;margin:0;color:#e5e8e1;font:400 15px/1.7 Manrope,Arial,sans-serif}
-.about-invitation-link{display:inline-flex;align-items:center;justify-content:space-between;gap:24px;flex-shrink:0;border:1px solid rgba(255,255,255,.55);border-radius:999px;padding:14px 20px;color:#fffaf1;text-decoration:none;font:600 13px/1.4 Manrope,Arial,sans-serif;transition:background .2s,color .2s}
-.about-invitation-link:hover,.about-invitation-link:focus-visible{background:#fffaf1;color:#35453c}
-@media(max-width:780px){.about-belief{padding:22px 0 48px}.about-invitation{display:block;padding:36px 28px}.about-invitation-link{margin-top:24px}}

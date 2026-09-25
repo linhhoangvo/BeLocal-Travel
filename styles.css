@@ -599,3 +599,7 @@ body.founder-dialog-open{overflow:hidden}
 .about-page .about-story-copy p,.about-page .about-story-copy p:first-child{margin:0 0 19px;color:#4d5c51;font:400 15px/1.75 Manrope,Arial,sans-serif}
 .about-page .about-story-copy p:last-child{margin-bottom:0}
 @media(max-width:760px){.about-page .about-story-who{display:block;padding-top:48px;padding-bottom:52px}.about-page .about-story-intro{margin-bottom:25px}.about-page .about-story-intro h2{font-size:clamp(36px,8vw,46px)}.about-page .about-story-intro>p{margin-top:10px}.about-page .about-story-copy p,.about-page .about-story-copy p:first-child{font-size:14px;line-height:1.7;margin-bottom:16px}}
+
+/* About page begins with its story after removing the duplicate hero */
+.about-page .about-story-who{padding-top:72px}
+@media(max-width:760px){.about-page .about-story-who{padding-top:48px}}

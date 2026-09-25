@@ -555,3 +555,7 @@ body.founder-dialog-open{overflow:hidden}
 .founder-dialog-role{margin:4px 0 25px!important;color:#9b6c4c!important;font-size:11px!important;font-weight:700!important;letter-spacing:.13em;text-transform:uppercase}
 .founder-dialog-copy p{margin:0 0 17px;color:#4d5a50;font:400 14px/1.75 Manrope,Arial,sans-serif}
 @media(max-width:680px){.founder-dialog{width:calc(100vw - 22px);max-height:94vh}.founder-dialog-layout{display:block}.founder-dialog-image{height:min(48vh,370px);min-height:0}.founder-dialog-image img{max-height:none}.founder-dialog-copy{padding:26px 24px 24px}.founder-dialog-close{position:sticky;top:0;float:right;margin-top:-12px;margin-right:-10px;z-index:2}.founder-dialog-copy h2{font-size:44px}}
+
+/* Compact About hero after removing pre-title links */
+.about-page .about-hero-story{padding-top:42px}
+@media(max-width:760px){.about-page .about-hero-story{padding-top:34px}}

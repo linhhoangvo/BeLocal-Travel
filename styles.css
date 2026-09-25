@@ -616,3 +616,5 @@ body.founder-dialog-open{overflow:hidden}
 .site-footer .footer-social-icon{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:#f7f5ee;color:#253129;text-decoration:none;transition:transform .2s,background-color .2s}
 .site-footer .footer-social-icon:hover,.site-footer .footer-social-icon:focus-visible{transform:translateY(-2px);background:#dfc9ac}
 .site-footer .footer-social-icon svg{width:19px;height:19px}
+
+.site-footer .footer-social-icon--pending{cursor:default;opacity:.75}

@@ -603,3 +603,10 @@ body.founder-dialog-open{overflow:hidden}
 /* About page begins with its story after removing the duplicate hero */
 .about-page .about-story-who{padding-top:72px}
 @media(max-width:760px){.about-page .about-story-who{padding-top:48px}}
+
+/* A quieter invitation at the end of the About page */
+.about-belief{padding-top:56px;padding-bottom:66px}
+.about-belief>.eyebrow{margin-bottom:14px}
+.about-belief h2{max-width:700px;margin:0 auto 10px;font:400 clamp(34px,3.5vw,48px)/1.12 'Cormorant Garamond',Georgia,serif;color:#2b382f;letter-spacing:-.02em}
+.about-belief>p{max-width:570px;margin:0 auto 22px}
+@media(max-width:780px){.about-belief{padding-top:48px;padding-bottom:56px}}

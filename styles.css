@@ -510,3 +510,10 @@ footer{padding-top:41px}
 .about-community-photo img{display:block;width:100%;height:clamp(300px,38vw,510px);object-fit:cover;object-position:center 63%;border-radius:16px}
 .about-community-photo figcaption{margin-top:10px;color:#6b766e;font:500 12px/1.5 Manrope,Arial,sans-serif}
 @media(max-width:760px){.about-community-photo{padding-bottom:48px}.about-community-photo img{height:clamp(260px,75vw,400px);object-position:center 70%;border-radius:12px}}
+
+/* Supplied BeLocal logo in site navigation */
+.home-header .brand{display:flex;align-items:center;flex:0 0 auto;line-height:0}
+.brand-logo-window{display:block;position:relative;width:220px;height:72px;overflow:hidden;flex:none}
+.brand-logo-window img{display:block;position:absolute;width:235px;height:235px;max-width:none;left:-10px;top:-80px}
+@media(max-width:950px){.brand-logo-window{width:185px;height:62px}.brand-logo-window img{width:200px;height:200px;left:-8px;top:-68px}}
+@media(max-width:420px){.brand-logo-window{width:160px;height:55px}.brand-logo-window img{width:174px;height:174px;left:-7px;top:-59px}}
